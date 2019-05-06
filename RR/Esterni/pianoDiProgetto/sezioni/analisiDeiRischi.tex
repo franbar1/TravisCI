@@ -1,0 +1,236 @@
+\section{Analisi dei Rischi}
+L'Analisi dei Rischi viene effettuata con lo scopo di prevenire e definire come affrontare i rischi 
+che possono verificarsi nel corso della durata del progetto. Il way of working di questo \glo{processo} è il 
+seguente:
+\begin{itemize}
+    \item \textbf{Identificazione}: consiste nell'individuare la natura del rischio che si presenta. Le fonti di rischio sono molteplici:
+                                    \begin{itemize}
+                                        \item rischi riguardanti alle tecnologie utilizzate;
+                                        \item rischi riguardanti i membri del gruppo;
+                                        \item rischi riguardanti all'organizzazione del lavoro;
+                                        \item rischi dei requisiti;
+                                        \item rischi aziendali;
+                                        \item rischi di stima.
+                                    \end{itemize}
+    \item \textbf{Analisi}: consiste nel capire la probabilità che il gruppo ha di imbattersi nel rischio e le conseguenze che questo può avere sul lavoro in svolgimento;
+    \item \textbf{Pianificazione}: descrive i metodi per evitare i rischi o comunque limitarli qualora si manifestassero.
+\end{itemize}
+
+I rischi verranno identificati da:
+\begin{itemize}
+    \item ID: R[tipo][X]
+    \begin{itemize}
+        \item tipo:
+        \begin{itemize}
+            \item tecnologico(T);
+            \item di gruppo(G);
+            \item organizzativo(O);
+            \item di requisiti(R);
+            \item aziendale(A);
+            \item di stima(S).
+        \end{itemize}
+        \item X: numero identificativo univoco che parte da 1.
+    \end{itemize}
+    \item nome;
+    \item descrizione;
+    \item probabilità;
+    \item livello di gravità;
+    \item strategie per rilevarli;
+    \item strategie per affrontarli.
+\end{itemize}
+Nel corso del progetto verranno individuati altri rischi, motivo per cui questa sezione
+non è definitiva, ma potrà essere soggetta a modifiche.
+\pagebreak
+\subsection{Rischi Tecnologici}
+
+\begin{center}
+    \renewcommand{\arraystretch}{2.2}
+    \rowcolors{3}{tableRow}{}
+    
+    \begin{longtable}{p{0.1\textwidth} p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth} }
+        
+        \rowcolor[HTML]{232f3e}
+    
+        \rowcolors{3}{tableRow}{}
+        \color[HTML]{FFFFFF} \textbf{ID} & \color[HTML]{FFFFFF} \textbf{Nome} & \color[HTML]{FFFFFF} \centering\textbf{Descrizione} & \color[HTML]{FFFFFF} \textbf{Rilevazione} & \color[HTML]{FFFFFF} \textbf{Contromisure} \\
+    \endhead
+    \rowcolor{white}\multicolumn{3}{c}{ Continua nella pagina successiva} \\
+   \endfoot
+   \caption{Rischi tecnologici}
+        \label{tab:tec}
+   \endlastfoot
+    RT1 & Inesperienza tecnologica & Rischio legato alle difficoltà di utilizzo di tecnologie sconosciute per i componenti del gruppo. Prevediamo di riscontrare questo problema all'inizio delle operzioni di sviluppo del progetto & Sarà compito di tutti i membri del gruppo rilevare la necessità di utilizzare tecnologie sconosciute ai più, in particolare sarà il \roleProjectManager{} a dover prestare maggiore attenzione & Per superare le difficoltà create da questo rischio il gruppo deve impegnarsi a conoscere le tecnologie sconosciute e imparare a padroneggiarle \\
+    
+    RT2 & Impedimenti hardware o software & rischio che si presenta se per qualsiasi motivo uno strumento di lavoro di un componente del gruppo non permette lo svolgimento di qualche attività o lo permette solo in parte & Sarà compito di chi incorrerà in questo rischio farlo presente agli altri membri del gruppo & Adoperarsi per poter continuare il lavoro su un altro dispositivo considerando che tutto ciò che viene svolto dai membri del gruppo viene poi condiviso su una \glo{repository} su \glo{GitLab} utilizzata dal gruppo \\
+    
+    \end{longtable}
+    
+    \end{center}
+
+    \pagebreak
+
+\subsection{Rischi Interni}
+
+\begin{center}
+    \renewcommand{\arraystretch}{2.2}
+    \rowcolors{3}{tableRow}{}
+    
+    \begin{longtable}{p{0.1\textwidth} p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth} }
+        
+        \rowcolor[HTML]{232f3e}
+    
+        \rowcolors{3}{tableRow}{}
+        \color[HTML]{FFFFFF} \textbf{ID} & \color[HTML]{FFFFFF} \textbf{Nome} & \color[HTML]{FFFFFF} \centering\textbf{Descrizione} & \color[HTML]{FFFFFF} \textbf{Rilevazione} & \color[HTML]{FFFFFF} \textbf{Contromisure} \\
+    \endhead
+    \rowcolor{white}\multicolumn{3}{c}{ Continua nella pagina successiva} \\
+   \endfoot
+   \caption{Rischi interni}
+        \label{tab:int}
+   \endlastfoot
+    RG1 & Impegni personali & Riguarda tutti gli impegni personali dei componenti del gruppo. Questo comporta che non sempre tutti i membri del gruppo saranno disponibili ad incontri o potrebbero avere difficoltà nelle tempistiche di lavoro & Il gruppo confida nell'onestà e maturità dei componenti del gruppo che dovranno impegnarsi ad essere disponibili e qualora non fosse possibile avvisare per tempo gli altri colleghi & Una volta riscontrato questo problema il \roleProjectManager{} dovrà pensare ad una nuova orgnizzazione del lavoro che dovrà coprire i vuoti lasciati dal componente impegnato \\
+    
+    RG2 & Rapporti interni & Rischio che riguarda problematiche che possono nascere qualora non si trovasse un punto d'intesa su un qualsiasi argomento tra due o più membri del gruppo & L'interesse del gruppo è evitare queste situazioni, ma qualora capitassero il \roleProjectManager{} sarà incaricato della gestione del gruppo & Il \roleProjectManager{} dovrà cercare di mediare tra le parti per trovare un punto d'incontro \\
+    
+    RG3 & Inesperienza del gruppo & Problematiche riguardanti la poca esperienza dei membri del gruppo di lavorare per un progetto in un rapporto cliente-fornitore. Per quasi tutti i componenti del gruppo queste modalità di lavoro sono nuove e possono portare problemi di ambientamento nella realtà del mondo del lavoro & Il \roleProjectManager{} dovrà prestare attenzione ad eventuali difficoltà dei membri del gruppo e capire come aiutarli in modo da rendere il contributo di ognuno il maggiore possibile & Per superare questa problematica sta a ogni componente del gruppo adoperarsi per eliminare lacune e difficoltà (o per lo meno limitarle) \\    
+    
+    
+    \end{longtable}
+    
+    \end{center}
+
+
+\pagebreak
+\subsection{Rischi Organizzativi}
+
+\begin{center}
+    \renewcommand{\arraystretch}{2.2}
+    \rowcolors{3}{tableRow}{}
+    
+    \begin{longtable}{p{0.1\textwidth} p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth} }
+        
+        \rowcolor[HTML]{232f3e}
+    
+        \rowcolors{3}{tableRow}{}
+        \color[HTML]{FFFFFF} \textbf{ID} & \color[HTML]{FFFFFF} \textbf{Nome} & \color[HTML]{FFFFFF} \centering\textbf{Descrizione} & \color[HTML]{FFFFFF} \textbf{Rilevazione} & \color[HTML]{FFFFFF} \textbf{Contromisure} \\
+    \endhead
+    \rowcolor{white}\multicolumn{3}{c}{ Continua nella pagina successiva} \\
+   \endfoot
+   \caption{Rischi organizzativi}
+        \label{tab:org}
+   \endlastfoot
+    RO1 & Distribuzione del lavoro disomogenea & Rischio che si presenta qualora il carico di lavoro è mal distribuito per cui ad uno o più membri del gruppo è assegnato un compito troppo dispendioso per una sola persona. Questo richio porta a rallentamenti e poca accuratezza & Chiunque ritenga di avere un carico di lavoro maggiore alle proprie possibilità dovrà farlo presente al gruppo che ne discuterà & dovrà essere organizzata una nuova divisione del lavoro che divida equamente i compiti tra i membri del gruppo \\
+    
+    RO2 & Indisponibilità di luoghi di studio & Si verifica quando non vi sono aule disponibili per lavorare insieme al progetto e per fare riunioni & Il problema può essere rilevato tramite l'applicazione DMunipd che mostra le prenotazione delle aule & Controllare sempre con almeno un giorno di anticipo quali aule sono libere e quali invece occupate e adoperarsi di conseguenza per trovarne di disponibili. Qualora non ve ne fossero si cerca un altro luogo adatto \\
+    
+    RO3 & Trasporti pubblici o personali & Rischio che consiste nel presentarsi a una riunione del gruppo in ritardo o addirittura non presentarsi dovuto al ritardo o sciopero dei mezzi pubblici o al traffico & In caso di scioperi i membri del gruppo devono informarsi per tempo. Per i ritardi sta ad ogni membro conoscere le difficoltà del tragitto che sia tramite mezzo pubblico o privato & Adoperarsi di conseguenza per evitare queste situazioni. Partire prima da casa o scegliere percorsi meno trafficati \\
+    
+    
+    \end{longtable}
+    
+    \end{center}
+
+    \pagebreak
+
+\subsection{Rischi dei Requisiti}
+
+\begin{center}
+    \renewcommand{\arraystretch}{2.2}
+    \rowcolors{3}{tableRow}{}
+    
+    \begin{longtable}{p{0.1\textwidth} p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth} }
+        
+        \rowcolor[HTML]{232f3e}
+    
+        \rowcolors{3}{tableRow}{}
+        \color[HTML]{FFFFFF} \textbf{ID} & \color[HTML]{FFFFFF} \textbf{Nome} & \color[HTML]{FFFFFF} \centering\textbf{Descrizione} & \color[HTML]{FFFFFF} \textbf{Rilevazione} & \color[HTML]{FFFFFF} \textbf{Contromisure} \\
+    \endhead
+    \rowcolor{white}\multicolumn{3}{c}{ Continua nella pagina successiva} \\
+   \endfoot
+   \caption{Rischi dei requisiti}
+        \label{tab:req}
+   \endlastfoot
+    RR1 & Incomprensione dei requisiti & Il gruppo si accorge di aver compreso male i requisiti. Può accadere all'inizio del progetto con poche conseguenze, ma se accade a progetto inoltrato il problema può rivelarsi molto serio & Sarà l'azienda proponente che comunicherà al gruppo se ciò che si sta sviluppando sia in linea con i requisiti da loro proposti & Non iniziare il progetto fino a che non tutto il gruppo non ha ben chiari i requisiti. Fondamentale sarà quindi stilare in maniera approfondita l'Analisi dei Requisiti. Incontri con il cliente possono servire molto a schiarire le idee \\
+    
+    RR2 & Modifica dei requisiti & Si verifica quando nel corso del progetto l'azienda proponente modifica qualche richiesta iniziale oppure se il gruppo sceglie di sviluppare il progetto in maniera diversa da quella già pensata & Sarà l'azienda a comunicare al gruppo il cambiamento dei requisiti & Effettuare nuovamente l'analisi dei requisiti \\
+    
+    RR3 & Cliente poco presente & Rischio che prevede contatti poco frequenti e/o di scarso aiuto con l'azienda proponente che mostra poco interesse & Capire fin da subito le disponibilità dell'azienda & Cercare di insistere mandando e-mail per quanto possibile e qualora questo non portasse a risultati capire al meglio i requisiti per conto proprio \\
+    
+    
+    \end{longtable}
+    
+    \end{center}
+   
+    \pagebreak
+    
+\subsection{Rischi di Stima}
+
+\begin{center}
+    \renewcommand{\arraystretch}{2.2}
+    \rowcolors{3}{tableRow}{}
+    
+    \begin{longtable}{p{0.1\textwidth} p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth} }
+        
+        \rowcolor[HTML]{232f3e}
+    
+        \rowcolors{3}{tableRow}{}
+        \color[HTML]{FFFFFF} \textbf{ID} & \color[HTML]{FFFFFF} \textbf{Nome} & \color[HTML]{FFFFFF} \centering\textbf{Descrizione} & \color[HTML]{FFFFFF} \textbf{Rilevazione} & \color[HTML]{FFFFFF} \textbf{Contromisure} \\
+    \endhead
+    \rowcolor{white}\multicolumn{3}{c}{ Continua nella pagina successiva} \\
+   \endfoot
+   \caption{Rischi di stima}
+        \label{tab:stima}
+   \endlastfoot
+    RS1 & Costi delle attività & Per ogni attività verrà stimato il costo di tempo, denaro e risorse utilizzate. A causa dell'inesperienza questa stima potrebbe essere errata & Se un membro del gruppo si accorge di non attenersi alla pianificazione e quindi termina prima o dopo del tempo prestabilito o utilizza risorse e denaro non come previsto, dovrà farlo presente al \roleProjectManager{} di progetto & Organizzare un'attenta pianificazione in modo da ridurre questo rischio e qualora si presentasse un eccesso troppo alto il \roleProjectManager{} dovrà ridistribure il carico di lavoro per ammorbidire i tempi e svolgere quanto prefissato e come nel periodo di tempo specifico \\
+    
+    
+    \end{longtable}
+    
+    \end{center}
+
+
+\subsection{Riepilogo}
+
+\begin{center}
+    \renewcommand{\arraystretch}{2.2}
+    \rowcolors{3}{tableRow}{}
+    
+    \begin{longtable}{ p{0.1\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
+
+        \rowcolor[HTML]{232f3e}
+    
+        \rowcolors{3}{tableRow}{}
+        \color[HTML]{FFFFFF} \textbf{ID} & \color[HTML]{FFFFFF} \centering\textbf{Probabilità} & \color[HTML]{FFFFFF} \textbf{Gravità} \\
+    \endhead
+    \rowcolor{white}\multicolumn{3}{c}{ Continua nella pagina successiva} \\
+    \endfoot
+    \caption{Riepilogo dei rischi}
+        \label{tab:riepilogo}
+    \endlastfoot
+    RT1 &  Alta & Media\\
+    
+    RT2 & Media & Alta\\
+    
+    RG1 & Media & Media\\
+    
+    RG2 & Alta & Bassa\\
+
+    RG3 & Alta & Bassa\\
+    
+    RO1 & Bassa & Media\\
+    
+    RO2 & Bassa & Bassa\\
+    
+    RO3 & Media & Bassa\\
+    
+    RR1 & Media & Alta\\
+    
+    RR2 & Bassa & Alta\\
+    
+    RR3 & Bassa & Alta\\
+    
+    RS1 & Alta & Media\\
+    
+    
+    \end{longtable}
+    
+    \end{center}

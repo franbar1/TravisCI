@@ -1,0 +1,37 @@
+\justify \section{Introduzione}
+
+\subsection{Scopo del documento}
+Lo scopo del documento è fornire una linea guida riguardo il metodo di lavoro che il gruppo deve seguire per l'intera durata del progetto.
+Il documento contiene un insieme di regole per la gestione di processi, attività e task fatti su misura per il
+progetto. In questo modo ogni componente del gruppo dovrà seguire un metodo di lavoro comune
+facilitando il coordinamento ed evitando disomogeneità all'interno del
+progetto.\\ 
+Questo documento sarà soggetto a modifiche.
+
+\subsection{Scopo del prodotto}
+La principale richiesta del progetto è rendere disponibile, all'utente registrato all'applicazione, delle micro-funzioni chiamate \glo{connettori}.
+Tali connettori sono inseriti all'interno di un \glo{workflow} svolto da un controllo vocale. \\
+Il progetto utilizzerà l'infrastruttura \glo{Amazon Web Services}, in particolare le tecnologie \glo{Lambda}, \glo{API Gateway}, \glo{Aurora Serverless} e \glo{DynamoDB}. La comunicazione dei risultati all'utente avviene tramite l'assistente vocale \textit{Amazon Alexa\glo}, l'applicazione mobile o web.
+L'applicativo dovrà essere multilingua rendendo disponibile la lingua italiana e quella inglese.
+Inoltre la creazione di routine dovrà essere univoca per ogni utente, ovvero se l'utente A crea una routine che si chiama "Buongiorno", anche
+l'utente B può creare una routine che si chiama "Buongiorno", ma le due routine potrebbero avere workflow diversi.
+
+\subsection{Glossario}
+All'interno dei documenti sono presenti termini che possono presentare significati ambigui. 
+Per tale motivo è stato creato il documento  \docNameVersionGlo{} che conterrà tali termini 
+affiancati dal loro significato. Le parole che sono presenti nel \docNameVersionGlo{} 
+presentano una "G" a pedice.  
+
+\subsection{Riferimenti}
+\subsubsection{Normativi}
+\begin{itemize}
+    \item \textbf{Capitolato C4 - \projectName{}}\\ \url{https://www.math.unipd.it/~tullio/IS-1/2018/Progetto/C4.pdf}
+    \item \textbf{VER-E-22-03-2019} ovvero il verbale tenuto il 22-03-2019 tramite conference call con il programma Google Hangouts. 
+\end{itemize}
+\subsubsection{Informativi}
+\begin{itemize}
+    \item \textbf{Standard ISO 12207}\\ \url{ https://www.math.unipd.it/~tullio/IS-1/2009/Approfondimenti/ISO\_12207-1995.pdf}
+    \item \textbf{Documentazione Amazon API Gateway} \\\url{https://aws.amazon.com/it/api-gateway/}
+    \item \textbf{Documentazione AWS Lambda} \\\url{https://aws.amazon.com/it/lambda/}
+    \item \textbf{Documentazione Amazon Aurora Serverless} \\\url{https://aws.amazon.com/it/rds/aurora/serverless/}   
+\end{itemize}

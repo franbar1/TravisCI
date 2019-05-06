@@ -1,0 +1,56 @@
+\thispagestyle{empty}
+%Logo gruppo
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.4]{../../template/images/logo}
+\end{figure}
+
+
+
+\hspace{5pt}
+\begin{center}
+\HRule \\[0.4cm]
+%Nome documento
+
+\textbf{\Large \huge \color{LogoColor}{\documentName}}\\[0.2cm]
+
+\textbf{\Large \huge  Progetto \projectName}
+\HRule \\[0.4cm]
+\end{center}
+	
+\vspace{5pt}
+
+%Email
+\begin{center}
+	\groupEmail
+\end{center}
+
+\vspace{5pt}
+
+%Informazioni documento
+\begin{center}
+	\textbf {\Large Informazioni sul documento}
+	
+\end{center}
+
+\begin{table}[H]
+\centering
+	\hspace{3.5cm}
+	\renewcommand{\arraystretch}{1.4}
+	\begin{tabular}{p{2.5cm} p{15px} p{8cm}}
+		\textbf{Versione} & \includegraphics[width=10px]{../../template/images/dot} & \documentVersion\\
+		\textbf{Responsabile} & \includegraphics[width=10px]{../../template/images/dot} & \documentApprovers \\
+		\textbf{Redattori} & \includegraphics[width=10px]{../../template/images/dot} & \documentEditors \\
+		\textbf{Verificatori} & \includegraphics[width=10px]{../../template/images/dot} & \documentVerifiers \\
+		\textbf{Uso} & \includegraphics[width=10px]{../../template/images/dot} & \documentUsage \\
+
+		
+		\textbf{Destinatari} & \includegraphics[width=10px]{../../template/images/dot} & \documentAddressee \\
+		
+	\end{tabular}
+\end{table}
+
+
+
+\vspace{68pt}
+\tikz[remember picture,overlay] \node[opacity=1,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../../template/images/bgFirstPage3}};

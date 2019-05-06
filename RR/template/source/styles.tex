@@ -1,0 +1,76 @@
+\definecolor{headColor}{cmyk}{0.4355,0.2419,0,0.7569}
+
+\fancypagestyle{styleDocPages}{
+	\thispagestyle{empty}
+	\thispagestyle{fancy}
+	\pagestyle{fancy}
+	% HEADER
+	\fancyhead{}
+	\setlength{\topmargin}{-60pt}
+	\setlength{\headsep}{60pt}
+	\fancyhfoffset[L]{\marginparwidth - \marginparsep}
+	\fancyhfoffset[R]{\marginparwidth - \marginparsep}
+	\fancyhead[L]{\definecolor{titlepagecolor}{cmyk}{0.0243,0.0162,0,0.0314}
+		\begin{tikzpicture}[remember picture,overlay]
+		\path [fill=titlepagecolor](-20,1.8) rectangle(1\paperwidth,-0.3);
+		\end{tikzpicture}
+		\includegraphics[width=65pt]{../../template/images/LogoHeader}}
+	\fancyhead[R]{\color{black} \nouppercase{\textbf{\leftmark}}}
+	% FOOTER
+	\fancyfoot{}
+	\fancyfoot[L]{\color{headColor}\documentName~\documentVersion}
+	\fancyfoot[R]{\color{headColor}Pagina \thepage~di~\hypersetup{linkcolor=headColor}\pageref{LastPage}}
+	\futurelet\TMPfootrule\def\footrule{{\color{headColor}\TMPfootrule}}
+	\setcounter{page}{0}
+	\pagenumbering{arabic}
+	\renewcommand{\headrulewidth}{0.0pt}
+	\renewcommand{\footrulewidth}{0.2pt}
+}
+
+\lstdefinestyle{codestyle}{
+	morekeywords={*,renewcommand,begin,multicolumn,color,textbf,rowcolor,centering,arraystretch,end,hline,includegraphics,caption,label,parbox,pie,legend,normalsize,footnotesize,textwidth,addplot,rowcolors},
+	keywordstyle=\bfseries\color{red},
+	commentstyle=\color{gray},
+	morecomment=[l]{//},
+	tabsize={2},
+	breaklines=true,
+	frame=single,
+	basicstyle=\footnotesize\ttfamily
+}
+
+\lstset{style=codestyle}
+
+\makeatletter
+
+\tikzstyle{chart}=[
+legend label/.style={font={\scriptsize},anchor=west,align=left},
+legend box/.style={rectangle, draw, minimum size=7pt},
+axis/.style={black,semithick,->},
+axis label/.style={anchor=east,font={\normalsize}},
+]
+
+\tikzstyle{bar chart}=[
+chart,
+bar width/.code={
+	\pgfmathparse{##1/2}
+	\global\let\bar@w\pgfmathresult
+},
+bar/.style={very thick, draw=white},
+bar label/.style={font={\bf\small},anchor=north},
+bar value/.style={font={\footnotesize}},
+bar width=.75,
+]
+
+\tikzstyle{pie chart}=[
+chart,
+slice/.style={line cap=round, line join=round, very thick,draw=white},
+pie title/.style={font={\bf}},
+slice type/.style 2 args={
+	##1/.style={fill=##2},
+	values of ##1/.style={}
+}
+]
+
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfsetlayers{background,main,foreground}

@@ -1,0 +1,425 @@
+\section{Processi di Supporto}
+    \subsection{Documentazione}
+        \subsubsection{Scopo}
+        Questo processo contiene linee guida su come devono essere redatti, modificati, distribuiti 
+        e mantenuti tutti i documenti necessari durante il ciclo di vita del software.
+        
+        \subsubsection{Aspettative}
+        La corretta implementazione di questo processo consente:
+            \begin{itemize}
+                \item l'individuazione di una serie di norme e convenzioni per la stesura di documenti;
+                \item la stesura di documenti formali, coerenti e validi.
+            \end{itemize}
+        
+        \subsubsection{Descrizione}
+            In questa sezione sono indicate tutte le norme, le convenzioni adottate e i vincoli imposti 
+            dal gruppo per la stesura di documento conforme alle aspettative.
+
+        \subsubsection{Approvazione dei documenti}
+        Ogni documento segue le seguenti fasi durante il suo ciclo di vita.
+            \begin{enumerate}
+                \item \textbf{Redazione}: In questa fase i redattori producono o modificano il documento;
+                \item \textbf{Verifica}: Il documento entra in questa fase quando i redattori hanno terminato il proprio lavoro. Il \roleProjectManager{} incaricherà i \roleVerifierP{} di controllare la correttezza, la conformità e la qualità del documento.
+                                        Se non supera il controllo con esito positivo, i \roleVerifierP{} incaricheranno i redattori a correggere gli errori.
+                                        In caso di esito positivo, il documento passerà alla fase di approvazione;
+                \item\textbf{Approvazione}: In questa fase, il documento è sottoposto al \roleProjectManager{} di progetto, che potrà approvarlo o meno.
+                                            Se approvato, il documento è da considerarsi formale.
+                                            In caso contrario, il \roleProjectManager{} di progetto deve fornire le motivazioni del rifiuto.
+            \end{enumerate}
+    
+        \subsubsection{Struttura dei documenti}
+            \myparagraph{Prima pagina}
+            La prima pagina di ogni documento è strutturata ordinatamente nel seguente modo:
+                \begin{itemize}
+                    \item\textbf{Logo del gruppo}: visibile come primo elemento e centrato;
+                    \item\textbf{Titolo}: nome del documento, centrato;
+                    \item\textbf{Progetto}: nome del progetto, centrato;
+                    \item\textbf{Recapito}: indirizzo email del gruppo, centrato;
+                    \item\textbf{Informazioni sul documento}: una sezione contenente le seguenti informazioni:
+                        \begin{itemize}
+                            \item{Versione}: numero di versione del documento;
+                            \item{Responsabile}: nome del \roleProjectManager{};
+                            \item{Redattori}: nomi dei redattori del documento;
+                            \item{Verificatori}: nomi dei \roleVerifierP{} del documento;
+                            \item{Uso}: tipo di uso;
+                            \item{Destinatari}: destinatari del documento.
+                        \end{itemize}
+                \end{itemize}
+            
+            \myparagraph{Registro delle modifiche}
+            Ogni documento dispone di un registro delle modifiche sotto forma di tabella. Tale tabella contiene le modifiche apportate al documento. Ogni riga della tabella corrisponde a una modifica apportata.\\
+            Le colonne sono le seguenti:
+                \begin{itemize}
+                    \item\textbf{Versione}: versione corrente del documento;
+                    \item\textbf{Data}: data della modifica;
+                    \item\textbf{Autore}: nome della persona \roleProjectManager{} della modifica;
+                    \item\textbf{Ruolo}: ruolo dell'autore al momento della modifica;
+                    \item\textbf{Descrizione}: breve descrizione della modifica apportata.
+                \end{itemize}
+            
+            \myparagraph{Indice}
+            Ogni documento deve contenere un indice numerico che permette una consultazione agevolata e macroscopica del contenuto del documento.         
+            \myparagraph{Contenuto principale}
+            La struttura e presentazione delle pagine del contenuto sono comuni a tutti i documenti. Ogni pagina del contenuto è così strutturata:
+                \begin{itemize}
+                    \item\textbf{Intestazione}: contiene il logo del gruppo in alto a sinistra e la sezione corrente in alto a destra;
+                    \item\textbf{Piè di pagina}: contiene il nome del documento con la relativa versione in basso a sinistra e numero di pagina corrente rispetto al totale in basso a destra. 
+                \end{itemize}
+                Eventuali note a piè di pagina vanno indicate in basso alla pagina corrente con un numero identificativo e una descrizione.
+            
+        \subsubsection{Template \LaTeX{}}
+        Per uniformare la struttura e facilitare la stesura di un documento il gruppo ha creato un template \LaTeX{} riutilizzabile in tutti i documenti ufficiali.  
+
+        \subsubsection{Norme tipografiche}
+            \myparagraph{Stile di testo}
+            \begin{itemize}
+                    \item\textbf{Grassetto}: viene applicato ai titoli, a termini su cui si vuole mettere enfasi o attirare l'attenzione del lettore e, se necessario, agli elementi di un elenco puntato;
+                    \item\textbf{Corsivo}: viene applicato nei seguenti casi:
+                            \begin{itemize}
+                                \item parole del glossario;
+                                \item attività del progetto;
+                                \item riferimenti ad altri documenti;
+                                \item ruoli del progetto;
+                                \item parole particolari, solitamente poco conosciute o usate;
+                                \item comandi vocali per Alexa.
+                            \end{itemize}
+                    \item\textbf{Maiuscolo}: le uniche parole che è consentito scrivere interamente in maiuscolo sono gli acronimi;
+                    \item\textbf{Glossario}: ogni parola contenuta nel glossario deve essere marcata, alla sua prima occorrenza in ogni documento, in carattere corsivo e con una G maiuscola a pedice.
+                \end{itemize}   
+            
+            \myparagraph{Elenchi puntati}
+            Ogni voce di un elenco comincia per lettera minuscola. Questa regola può non essere applicata per enfatizzare concetti relativamente corti.\\
+            Ogni voce di un elenco termina con un "\textbf{;}", eccetto l'ultima che termina con un "\textbf{.}".\\
+            Ogni elemento di un elenco puntato viene rappresentato graficamente da un pallino nel primo livello, da un trattino nel secondo e da un asterisco nel terzo. 
+            Se un elenco puntato ha lo scopo di identificare una sequenza ordinata allora deve essere utilizzato un elenco enumerato al primo livello e un elenco alfabetico al secondo.
+            
+            \myparagraph{Formati comuni}
+            Per le seguenti tipologie di concetto vengono applicati i seguenti formalismi:
+                \begin{itemize}
+                    \item\textbf{Data}: \begin{center}\textbf{GG-MM-AAAA}\end{center}
+                        \begin{itemize}
+                            \item\textbf{GG}: rappresenta il giorno con due cifre;
+                            \item\textbf{MM}: rappresenta il mese con due cifre;
+                            \item\textbf{AAAA}: rappresenta l'anno con quattro cifre.
+                        \end{itemize}
+                    \item\textbf{Ora}: \begin{center}\textbf{HH:MM}\end{center}
+                        \begin{itemize}
+                            \item\textbf{HH}: rappresenta l'ora con due cifre e un valore compreso tra 00 e 23;
+                            \item\textbf{MM}: rappresenta i minuti con due cifre e un valore compreso tra 00 e 59.
+                        \end{itemize}
+                \end{itemize}
+
+            \myparagraph{Sigle}
+            È previsto l'uso delle seguenti sigle:
+                \begin{itemize}
+                \item \textbf{SdF}: studio di fattibilità;
+                \item \textbf{NdP}: norme di progetto;
+                \item \textbf{AdR}: analisi dei requisiti;
+                \item \textbf{PdP}: piano di progetto;
+                \item \textbf{PdQ}: piano di qualifica;
+                \item \textbf{MU}: manuale utente;
+                \item \textbf{MS}: manuale sviluppatore;
+                \item \textbf{RR}: revisione dei requisiti;
+                \item \textbf{RP}: revisione di progettazione;
+                \item \textbf{RQ}: revisione di qualifica;
+                \item \textbf{RA}: revisione di accettazione;
+                \item \textbf{Re}: \roleProjectManagerP{};
+                \item \textbf{Am}: \textit{amministratore di progetto};
+                \item \textbf{An}: \roleAnalyst{};
+                \item \textbf{Ve}: \roleVerifier{};
+                \item \textbf{Pr}: \roleProgrammer{};
+                \item \textbf{Pt}: \roleDesigner{};
+                \item \textbf{PB}: Product Baseline;
+                \item \textbf{TB}: Technology Baseline;
+                \item \textbf{PoC}: Proof of Concept.
+                \end{itemize}
+
+        \subsubsection{Elementi grafici}
+            \myparagraph{Tabelle}
+                Ogni tabella deve:
+                \begin{itemize}
+                    \item essere centrata orizzontalmente nella pagina;
+                    \item avere una breve didascalia;
+                    \item avere un numero progressivo unico in tutto il documento per facilitarne il tracciamento.
+                \end{itemize}
+            
+            \myparagraph{Immagini}
+            Ogni immagine deve essere centrata orizzontalmente e avere una breve descrizione. Inoltre, per migliorarne la leggibilità, ci deve essere una netta separazione tra paragrafi che precedono e seguono un'immagine.\\
+            I \glo{diagrammi di Gantt}, UML e i grafici vengono inseriti sotto forma di immagine. 
+            
+
+        \subsubsection{Classificazione dei documenti}
+            \myparagraph{Documenti informali}
+            Tutte le versioni dei documenti che non sono ancora state approvate dal \roleProjectManagerP{} sono ritenute informali e l'utilizzo è da considerarsi esclusivamente all'interno del gruppo.
+            \myparagraph{Documenti formali}
+            Un documento viene definito formale quando è stato approvato dal \roleProjectManagerP{}. Per raggiungere tale stato il documento deve superare la verifica e la validazione. Solo i documenti formali possono essere distribuiti all'esterno del gruppo.
+            \myparagraph{Verbali}
+            Documenti destinati a uso interno redatti da un segretario in occasione di incontri interni al gruppo. Non necessitano di versionamento in quanto non necessitano di modifiche successive alla prima stesura. Ogni verbale deve essere approvato dal \roleProjectManagerP{}.
+            \myparagraph{Glossario}
+            Documento destinato a uso esterno. Consiste in un elenco di definizioni di tutte le parole possibilmente sconosciute o che possono creare ambiguità e necessitano di una definizione precisa. Tutte le parole del glossario, alla prima occorrenza in un documento, sono scritte in corsivo e marcate con una G a pedice.
+
+        \subsubsection{Strumenti}
+            \myparagraph{\LaTeX{}}
+            Per la stesura della documentazione il gruppo utilizza il linguaggio \LaTeX{} in quanto permette:
+                \begin{itemize}
+                    \item di separare il contenuto dalla formattazione tramite un template condiviso da tutti i documenti;
+                    \item a individui diversi di lavorare su capitoli diversi di uno stesso documento;
+                    \item di generare documenti al massimo grado di professionalità e qualità.
+                \end{itemize}
+
+            \myparagraph{Visual Studio Code}
+            Per la stesura del codice \LaTeX{} il gruppo utilizza l'editor Visual Studio Code. Questo strumento integra un compilatore e visualizzatore PDF, fornisce suggerimenti per completare i comandi di \LaTeX{} e permette l'integrazione con \glo{Git}.
+
+            \myparagraph{Astah UML}
+            Per modellare i diagrammi UML 2.0, di casi d'uso e di attività il gruppo utilizza lo strumento Astah UML.
+
+            \myparagraph{Microsoft Project}
+            Per la modellazione dei diagrammi di Gantt il gruppo utilizza lo strumento Microsoft Project. 
+          
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   
+    \subsection{Gestione della configurazione}
+        \subsubsection{Versionamento}
+        Ogni documento, ad eccezione dei verbali, deve essere versionato in modo da permettere l'accesso ad ogni singola versione prodotta durante il loro ciclo di vita.
+        Il formalismo da applicare è il seguente:
+            \begin{center}v[x].[y].[z]\end{center}
+        dove:
+            \begin{itemize}
+                \item\textbf{x}: 
+                    \begin{itemize}
+                        \item parte da 0;
+                        \item indica il numero di versione principale;
+                        \item viene incremento dal \roleProjectManagerP{} all'approvazione del documento; 
+                    \end{itemize}
+                \item\textbf{y}: 
+                    \begin{itemize}
+                        \item parte da 0;
+                        \item indica una modifica parziale;
+                        \item viene incrementato dal \roleVerifier{} ad ogni verifica;
+                        \item viene riportata a 0 a ogni incremento della x;
+                    \end{itemize}
+                \item\textbf{z}:
+                    \begin{itemize}
+                        \item parte da 0;
+                        \item indica una modifica minore, una correzione o aggiunta che non deve essere sottoposto a verifica;
+                        \item viene incrementato dal redattore;
+                        \item viene riportata a 0 a ogni incremento di x e/o y.
+                    \end{itemize}
+            \end{itemize}
+
+        \subsubsection{Repository}
+        Il gruppo ha scelto il software di controllo versione distribuito Git e la piattaforma \glo{GitLab} per gestire la \glo{repository} creata su quest'ultima piattaforma.
+            \myparagraph{Struttura}
+            La repository è organizzata in cartelle:
+            \begin{itemize}
+                \item \textbf{RR}: raccoglie tutti i file necessari per la creazione di documenti da consegnare per la \RR. Il contenuto della cartella \textbf{RR} è suddiviso in:
+                    \begin{itemize}
+                        \item \textbf{Esterni}: contiene tutte le cartelle per i documenti esterni con i rispettivi file .tex;
+                        \item \textbf{Interni}: contiene tutte le cartelle per i documenti interni con i rispettivi file .tex;
+                        \item \textbf{template}: contiene i file del template. 
+                    \end{itemize}
+                
+                \begin{itemize}
+                    \item \textbf{script}: contiene tutti i \glo{script} realizzati dal gruppo per la gestione dei documenti.
+                \end{itemize}
+                \item Saranno aggiunte le cartelle \textbf{RP, RQ e RA} che conterranno file per le successive consegne.
+            \end{itemize}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \subsection{Garanzia della qualità}
+        \subsubsection{Scopo}
+        Si occupa di fornire un'adeguata garanzia che i prodotti e i processi software siano conformi e aderiscano ai piani stabiliti nel ciclo di vita del software.
+        \subsubsection{Aspettative}
+        L'obiettivo è di ottenere:
+        \begin{itemize}
+            \item qualità nei processi;
+            \item qualità nei prodotti;
+            \item soddisfazione del proponente;
+            \item qualità del sistema per costruzione.
+        \end{itemize}
+        
+        \subsubsection{Controllo qualità di prodotto}
+        La qualità di prodotto viene garantita dai processi di verifica e validazione e dal rispetto delle norme.
+        \begin{itemize}
+            \item \textbf{Verifica}: accerta che l'esecuzione delle attività di processo siano corrette;
+            \item \textbf{Validazione}: accerta che il prodotto rispecchi le aspettative, utilizzando un metodo sistematico, disciplinato e quantificabile;
+            \item \textbf{Norme}: il prodotto deve rispettare le norme e gli strumenti descritti all'interno di questo documento.
+        \end{itemize}
+        
+        \subsubsection{Controllo qualità di processo}
+        La qualità di processo viene migliorata continuamente seguendo il modello \glo{PDCA} che apporta qualità in modo incrementale.
+        Basandosi sullo standard \glo{SPICE}, si può quantificare la qualità di un processo e studiare le sue caratteristiche di interesse.
+        
+        \subsubsection{Classificazione metriche}
+        I \roleVerifierP{} hanno definito delle metriche per garantire la qualità  del lavoro, riportandone gli obiettivi nel \docNameVersionPdQ{}. \\
+        Tali metriche devono rispettare la seguente nomenclatura:
+        \begin{center}\textbf{M[X][Y]}\end{center}
+        dove:
+        \begin{itemize}
+            \item \textbf{M}: sta per metrica;
+            \item \textbf{X}: indica la tipologia della metrica e può assumere i seguenti valori:
+                \begin{itemize}
+                    \item \textbf{PC}: indica una metrica per il processo;
+                    \item \textbf{PD}: indica una metrica per il documento;
+                    \item \textbf{PS}: indica una metrica per il software.
+                \end{itemize}
+            \item \textbf{Y}: è un numero intero incrementale che indica il codice univoco della metrica.
+        \end{itemize}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \subsection{Verifica}
+        \subsubsection{Scopo}
+        Si occupa di individuare gli errori introdotti nel prodotto durante la fase di redazione o sviluppo e di realizzare prodotti corretti e coesi.
+        \subsubsection{Aspettative}
+        La corretta esecuzione del processo in esame permette di individuare:
+            \begin{itemize}
+                \item i criteri per la verifica;
+                \item una procedura di verifica;
+                \item i difetti da correggere.
+            \end{itemize}
+
+        \subsubsection{Descrizione}
+        Per ottenere un prodotto conforme alle aspettative, il processo fa affidamento a due attività:
+            \begin{itemize}
+                    \item\textbf{Analisi}: consiste nell'analisi del codice sorgente e la sua successiva esecuzione;
+                    \item\textbf{Test}: definisce tutti i test che vengono eseguiti sul software.
+            \end{itemize}
+
+        \subsubsection{Attività}
+            \myparagraph{Analisi}
+            L'analisi viene effettuata seguendo due metodi: analisi statica e analisi dinamica.
+                \mysubparagraph{Analisi statica}
+                L'analisi statica permette di rilevare anomalie all'interno dei documenti e del codice sorgente durante il ciclo di vita.
+                È applicabile tramite due tecniche diverse:
+                    \begin{itemize}
+                        \item\textbf{Walkthrough}: Questa tecnica consiste in una lettura a largo spettro in cerca di anomalie. Si tratta di un metodo dispendioso in termini di efficienza. Verrà utilizzata nella fase iniziale del progetto a causa della non conoscenza e padronanza delle \docNameNdP{} e del \docNamePdQ{}.  
+                        \item\textbf{Inspection}: Questa tecnica consiste in una lettura mirata e strutturata. Permette di localizzare errori utilizzando la lista di controllo e le misurazioni effettuate rendendo, con l'acquisizione di esperienza, questa tecnica sempre più efficiente.
+                    \end{itemize}
+                    Di seguito sono descritte le liste di controllo per la documentazione e il codice che il \roleVerifier{} può utilizzare durante il processo di verifica.
+                    \begin{itemize}
+                        \item\textbf{Lista di controllo per la documentazione}
+                            % Tabella lista controllo doc.
+                            \begin{table}[H]
+                                \centering
+                                \renewcommand{\arraystretch}{2.8}
+                                \rowcolors{3}{tableRow}{}
+                                \begin{tabular}{c c c c}
+                                    \rowcolor[HTML]{232f3e} 
+                                    \multicolumn{1}{c}{\color[HTML]{FFFFFF} \textbf{Anomalia}} &
+                                    \multicolumn{1}{c}{\color[HTML]{FFFFFF} \textbf{Descrizione}} \\
+                                    Elenchi puntati & Elenchi puntati non conformi alle \docNameNdP{} \\
+                                    Sintassi & Errori di struttura della frase \\
+                                    Lessico & Uso di vocaboli inappropriati o in modo improprio \\
+                                    Grassetto/Corsivo & Uso non conforme alle \docNameNdP{} \\
+                                    Formato data & Uso di formati data non conformi \docNameNdP{} \\                                    
+                                \end{tabular}
+                                \caption {Lista anomalie comuni nella documentazione} \label{table:LCD}
+                            \end{table}
+
+                        \item\textbf{Lista di controllo per il codice} Da ampliare. Ci sarà una tabella contente anomalie comuni nel codice.
+                            % Tabella lista controllo codice.
+                            \begin{table}[H]
+                                \centering
+                                \renewcommand{\arraystretch}{2.8}
+                                \rowcolors{3}{tableRow}{}
+                                \begin{tabular}{c c c c}
+                                    \rowcolor[HTML]{232f3e} 
+                                    \multicolumn{1}{c}{\color[HTML]{FFFFFF} \textbf{Anomalia}} &
+                                    \multicolumn{1}{c}{\color[HTML]{FFFFFF} \textbf{Descrizione}} \\ 
+                                \end{tabular}
+                                \caption {Lista anomalie comuni nel codice} \label{table:LCC}
+                            \end{table}
+                    \end{itemize}
+                \mysubparagraph{Analisi dinamica}
+                L'analisi dinamica è una procedura che prevede l'analisi del software attraverso l'esecuzione di test che ne verificano il corretto funzionamento e segnalano le anomalie. Ogni test deve essere ripetibile, cioè, dato uno stesso input e lo stesso ambiente, si deve ottenere lo stesso output.\\
+                Per ogni test devono essere definiti i seguenti parametri:
+                    \begin{itemize}
+                        \item\textbf{ambiente}: il sistema hardware e software sul quale viene eseguito il test del prodotto;
+                        \item\textbf{stato iniziale}: lo stato iniziale del prodotto;
+                        \item\textbf{input}: l'input inserito;
+                        \item\textbf{output}: l'output atteso; 
+                        \item\textbf{istruzioni aggiuntive}: istruzioni aggiuntive riguardanti le modalità del test e l'interpretazione dell'output.
+                    \end{itemize}        
+        
+        \subsubsection{Test}
+            \myparagraph{Test di unità}
+            Si eseguono su singole unità di software. Tali test permettono di verificare la correttezza della singola unità. 
+            Se le singole unità sono corrette allora è possibile proseguire con i \glo{test di integrazione}. \\
+            Ogni test necessita della scrittura di un \glo{driver} e di un \glo{stub} che simulano un'unità chiamante e un'unità chiamata rispettivamente.
+            Tali test vengono identificati nel seguente modo:
+                \begin{center}\textbf{TU[codice]}\end{center}
+            dove \textbf{codice} è un numero intero incrementale e identifica l'unità da verificare.
+            
+            \myparagraph{Test di integrazione}
+            Sono un'estensione del \glo{test di unità}. Le singole unità vengono raggruppate e vengono eseguiti test sull'interfaccia tra esse. 
+            Man mano che i test vengono superati, si formano raggruppamenti sempre maggiori su cui vengono iterati test di integrazione fino al raggiungimento della dimensione totale del sistema.
+            Tali test vengono identificati nel seguente modo:
+                \begin{center}\textbf{TI[codice]}\end{center}
+            dove \textbf{codice} è un numero intero incrementale e identifica la componente da verificare.
+            
+            \myparagraph{Test di sistema}
+            Verifica il soddisfacimento completo dei requisiti. Viene fatto alla validazione del prodotto finale, sul sistema nella sua interezza.
+            Tali test vengono identificati nel seguente modo:
+                \begin{center}\textbf{TS[codice]}\end{center}
+            dove \textbf{codice} è un numero incrementale e identifica la componente da verificare.
+
+            \myparagraph{Test di regressione}
+            Sono effettuati ogni volta che viene fatta una qualunque modifica al sistema. A seguito di un cambiamento è necessario eseguire nuovamente tutti i test esistenti sul codice modificato per verificare la validità delle modifiche.
+            
+            \myparagraph{Test di accettazione}
+            Vengono eseguiti in presenza del richiedente. Se superato, il prodotto è approvato e pronto al rilascio.
+            Tali test vengono identificati nel seguente modo:
+                \begin{center}\textbf{TA[tipo][importanza][codice]}\end{center}
+            dove:
+                \begin{itemize}
+                    \item \textbf{tipo} indica il tipo di requisito di cui si tratta e può assumere i seguenti valori:
+                        \begin{itemize}
+                            \item \textbf{0}: indica i requisiti obbligatori;
+                            \item \textbf{1}: indica i requisiti desiderabili;
+                            \item \textbf{2}: indica i requisiti opzionali.
+                        \end{itemize}
+                    \item \textbf{importanza} indica l'importanza del requisito e può assumere i seguenti valori:
+                        \begin{itemize}
+                            \item \textbf{F}: indica un requisito funzionale;
+                            \item \textbf{P}: indica i requisito prestazionale;
+                            \item \textbf{Q}: indica i requisito qualitativo;
+                            \item \textbf{D}: indica i requisito dichiarativo o di vincolo.
+                        \end{itemize} 
+                    \item \textbf{Codice} è un numero intero incrementale e identifica la componente da verificare.         
+                \end{itemize}
+            I test di accettazione hanno, inoltre, uno Stato che può assumere i seguenti valori:
+                \begin{itemize}
+                    \item \textbf{i}: implementato;
+                    \item \textbf{n.i.}: non implementato;
+                    \item \textbf{s}: superato;
+                    \item \textbf{n.s.}: non superato. 
+                \end{itemize}
+
+        \subsubsection{Strumenti}
+            \myparagraph{Verifica ortografica e sintattica}
+            Viene utilizzato l'estensione Spell Right di Visual Studio Code per la verifica dell'ortografia.
+            
+            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \subsection{Validazione}
+        \subsubsection{Scopo}
+        Il processo di validazione consente di accertare l'efficacia del prodotto finale. L'esito positivo di tale processo garantisce il soddisfacimento di tutti i requisiti e bisogni del committente.
+        \subsubsection{Aspettative}
+        La corretta esecuzione di tale processo consente di individuare:
+        \begin{itemize}
+            \item una procedura di validazione;
+            \item i criteri per la validazione;
+            \item la conformità del prodotto finito.
+        \end{itemize} 
+        
+        \subsubsection{Descrizione}
+        Il processo di validazione consiste nell'identificare gli oggetti da validare e valutare che i risultati rispettino le aspettative.
+
+        \subsubsection{Attività}
+        Le attività per compiere la validazione sono:
+        \begin{itemize}
+            \item eseguire i test sul prodotto;
+            \item i \textit{\roleVerifierP{}} eseguono i test e stendono un resoconto sui risultati;
+            \item se i risultati non sono soddisfacenti allora si ritorna al primo punto e si rieseguono i test;
+            \item i risultati vengono inviati al proponente.
+        \end{itemize}

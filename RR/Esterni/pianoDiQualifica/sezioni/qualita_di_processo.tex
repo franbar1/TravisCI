@@ -1,0 +1,114 @@
+\section{Qualità di processo}
+In questa sezione vengono descritti gli obiettivi per garantire la qualità dei processi adottati dal gruppo. 
+Tali processi sono espressi in termini quantitativi al fine di semplificare
+e rendere oggettiva la loro verifica.
+Per garantire la qualità il gruppo ha deciso di seguire il principio di miglioramento continuo (\glo{PDCA}) e di adottare lo standard ISO/IEC 15504 denominato \glo{SPICE} (Software Process Improvement and Capability Determination).
+In particolare sono state usate delle metriche ritenute significative, ognuna caratterizzata da un codice identificativo e riportate nel documento
+\docNameNdP{}.  Per ogni metrica definiremo dunque in questa sezione gli obiettivi qualitativi fissati, denotati da:
+\begin{itemize}
+    \item \textbf{Range di accettazione}: intervallo in cui il valore misurato viene considerato sufficiente, seppur migliorabile;
+
+    \item \textbf{Range di ottimalità}: intervallo in cui il valore misurato viene ritenuto ottimo.
+    
+\end{itemize}
+
+    \subsection{Controllo di processi}
+    
+    Lo standard ISO/IEC 15504 fornisce gli strumenti necessari per valutare l’idoneità dei processi. 
+    Questo modello descrive come ogni \glo{processo} debba essere controllato continuamente con lo scopo di rilevare possibili rischi che impediscono il raggiungimento degli obiettivi prefissati.
+    Il modello SPICE definisce sei possibili livelli di maturità del processo 
+    i quali possiedono degli attributi utili per misurarla, che sono:
+
+    \begin{table}[H]
+        \centering
+                        
+        \renewcommand{\arraystretch}{2.6}
+        \rowcolors{3}{tableRow}{}
+        \begin{tabular}{p{1.1cm} p{2cm} p{6.9cm} p{5.2cm}}
+            \rowcolor[HTML]{232f3e} 
+            \multicolumn{1}{c}{\color[HTML]{FFFFFF} \textbf{Livello}} &
+            \multicolumn{1}{c}{\color[HTML]{FFFFFF} \textbf{Nome}} &
+            \multicolumn{1}{c}{\color[HTML]{FFFFFF} \textbf{Descrizione}} &
+            \multicolumn{1}{c}{\color[HTML]{FFFFFF} \textbf{Attributi di Processo}} \\
+            
+        0 & Incomplete process &  Livello in cui non vi è nessun tipo di indicatore, descrive un processo non implementato oppure fallito, cioè che non ha prodotto nessun risultato & \\
+        1 & Performed process &  Livello in cui il processo è stato attuato e adempie all'obiettivo prefissato & 
+        \begin{itemize}
+            \item Process performance
+        \end{itemize} \\
+        2 & Managed process &  Livello che già adempie ai suoi obiettivi e presenta dei prodotti controllati e mantenuti, attività pianificate e controllate, documentate nello svolgimento & 
+        \begin{itemize}
+            \item Performance management
+            \item Work product management
+        \end{itemize}\\
+        3 & Estabilished process & Livello che garantisce la produzione di prodotti adatti & 
+        \begin{itemize}
+            \item Process definition
+            \item Process deployment
+        \end{itemize} \\
+        4 & Predictable process &  Livello dove il processo viene eseguito con limiti e obiettivi di produzione definiti & 
+        \begin{itemize}
+            \item Process measurement
+            \item Process control
+        \end{itemize} \\
+        5 & Optimizing process & Livello dove il processo è continuativamente migliorato per soddisfare gli obiettivi di business attuali e pianificati & 
+        \begin{itemize}
+            \item Process innovation
+            \item Process optimization
+        \end{itemize} \\
+        \end{tabular}
+        \caption [Descrizione Livelli ]{Descrizione Livelli} \label{table:DLN} 
+    \end{table}
+    \pagebreak
+    Per tutti gli attributi di processo, SPICE fornisce un metro di valutazione per misurare il loro raggiungimento:
+    \begin{itemize}
+        \item \textbf{N}: non superato (0\%-15\%);
+        \item \textbf{P}: parzialmente superato (16\%-50\%);
+        \item \textbf{L}: largamente superato (51\%-85\%);
+        \item \textbf{F}: completamente superato (86\%-100\%).
+    \end{itemize}
+    
+    Tali valori possono essere utilizzati nel ciclo PDCA, il cui scopo  e quello
+di controllare la qualità di un processo durante tutto il suo \glo{ciclo di vita} e
+permettere il miglioramento in efficacia ed efficienza dello stesso. Le fasi
+descritte da PDCA sono le seguenti:
+\begin{itemize}
+    \item \textbf{Plan}: fase di pianificazione dove si decidono e si individuano gli obiettivi di
+qualità e i risultati desiderati;
+\item \textbf{Do}: fase in cui si mette in atto il piano stabilito nella fase precedente;
+\item \textbf{Check}: fase di verifica in cui si confrontano i dati in output dalla fase Do con i risultati previsti in fase Plan;
+\item \textbf{Act}: fase in cui si individuano le cause delle eventuali discordanze riscontrate
+in fase Check e si determinano le azioni da intraprendere per risolverle e migliorare il processo aumentandone così la qualità.
+\end{itemize}
+
+       \subsubsection{Gestione dei Processi}
+      
+        In questa sezione verranno trattate le metriche per valutare la gestione dei processi definite nelle \docNameNdP\mbox{} §A.1: 
+
+        \begin{center}
+            \renewcommand{\arraystretch}{2.2}
+            \rowcolors{3}{tableRow}{}
+            
+            \begin{longtable}{c c c c c }
+              
+              \rowcolor[HTML]{232f3e}
+            
+              \rowcolors{3}{tableRow}{}
+             \color[HTML]{FFFFFF} \textbf{Codice} & \color[HTML]{FFFFFF} \textbf{Nome} & \color[HTML]{FFFFFF} \centering\textbf{Range di accettazione} & \color[HTML]{FFFFFF} \textbf{Range di ottimalità} & \color[HTML]{FFFFFF} \textbf{Unità di misura} \\
+            \endhead
+            \rowcolor{white}\multicolumn{3}{c}
+               { Continua nella pagina successiva} \\
+               \endfoot
+               \caption [Range delle metriche per il processo di gestione]{Range delle metriche per il processo di gestione}
+              \label{tabella:reqP1}
+               \endlastfoot
+               %sv
+               MPC1 & Schedule Variance(SV) & $\geq$ 0 & $\geq$ 0 & Attività \\
+               %bv
+               MPC2 & Budget Variance(BV) & $\geq$ 0 & $\geq$ 0 & Euro \\
+               MPC3 & Estimated at Completion (EAC) & $\leq$ 0 & $<$ 0 & Euro \\
+               MPC4 & Variance at Completion (VAC) & $\geq$ 0 & $>$ 0 & Euro \\
+               %Indice di Gulpease & $\geq$ 40 & $\geq$ 60 & Intero \\
+            \end{longtable}
+
+        \end{center}

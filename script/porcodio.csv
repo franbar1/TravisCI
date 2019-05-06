@@ -1,0 +1,81 @@
+Amazon Alexa,Amazon Alexa è l’assistente vocale personale di Amazon basato su cloud.
+Amazon Web Services,#Amazon Web Services è la piattaforma di cloud computing di Amazon che offre un'ampia gamma di servizi globali di elaborazione, storage, database, analisi e implementazione, oltre a servizi applicativi, che consentono alle aziende di espandersi più rapidamente, ridurre i costi dell'infrastruttura IT e dimensionare le applicazioni secondo necessità.#
+Android,#Android è un sistema operativo embedded progettato per dispositivi mobili, con interfacce utente specializzate, sviluppato da Google Inc.#
+Apache Kafka,#Apache Kafka è una piattaforma per il data streaming distribuita che permette di pubblicare, sottoscrivere, archiviare ed elaborare flussi di record in tempo reale. È in grado di gestire flussi di dati provenienti da più fonti distribuendoli a più consumatori.#
+API Gateway,#L’API gateway è lo strumento che ci permette d’intermediare i servizi ( o microservizi) ed esporli in maniera strutturata verso l’esterno. Si tratta di applicazioni web molto sofisticate che agiscono da proxy rispetto alle interrogazioni dei client, monitorando e gestendo il traffico di chiamate.#
+API REST,strumento che ci permette d’intermediare i servizi ( o microservizi) ed esporli in maniera strutturata verso l’esterno
+Apprendimento supervisionato,L'Apprendimento supervisionato è una tecnica di apprendimento automatico che mira a istruire un sistema informatico in modo da consentirgli di risolvere dei compiti in automatico.
+Attori,#Entità, che può essere umana , che interagisce con il sistema per svolgere delle attività.#
+Aurora Serverless,Amazon Aurora è un motore di database relazionale.È progettato per offrire la velocità e l'affidabilità dei database commerciali di fascia alta in modo semplice ed economico. 
+Bayes,#Il teorema di Bayes in statistica consente di calcolare la probabilità condizionata di una causa di un evento A noto B, a partire dalla conoscenza delle probabilità a priori degli eventi A e B della probabilità condizionata di B noto A#
+Blockchain,#registro transnazionale sicuro, condiviso da tutte le parti che operano all’interno di una data rete distribuita di computer. Registra e archivia tutte le transazioni che avvengono all’interno della rete, eliminando in definitiva la necessità di terze parti “fidate.#
+Bootstrap,#raccolta di strumenti liberi per la creazione di siti e applicazioni per il Web. Essa contiene modelli di progettazione basati su HTML e CSS, sia per la tipografia, che per le varie componenti dell’interfaccia, come moduli, pulsanti e navigazione, cosı̀ come alcune estensioni opzionali di JavaScript.#
+Broker,#Nella computazione distribuita, un object request broker (ORB) è un frammento di software middleware che permette ai programmatori di effettuare chiamate di programma tra computer differenti in una rete. (questo broker?)#
+Capitolato,#il capitolato è un documento tecnico, in genere allegato ad un contratto di appalto, che vi fa riferimento per definire in quella sede le specifiche tecniche delle opere che andranno ad eseguirsi per effetto del contratto stesso.#
+Car sharing,#il car-sharing è un servizio di autonoleggio essenzialmente a breve termine, dove le autovetture sono messe a disposizione da un’azienda (privata o pubblica) e distribuite nei centri urbani.#
+Città intelligenti,#una città può essere definita "smart city" quando gli investimenti in capitale umano e sociale e nelle infrastrutture tradizionali (mobilità e trasporti) e moderne alimentano uno sviluppo economico sostenibile ed una elevata qualità della vita con una gestione saggia delle risorse naturali, attraverso un metodo di governo partecipativo.#
+Client-side,Indica le operazioni di elaborazione effettuate da un client in un'architettura client-server.
+Cloud,lo affiancano al nome di cloud computing
+Cloud computing,è un termine usato per descrivere una varietà di concetti informatici che coinvolge un largo numero di computer collegati tramite una connessione in tempo reale come Internet.
+Componente custom specifico,#indica un componente, una funzione o un dispositivo progettato e realizzato su misura in base alle necessità dell'acquirente o della funzione che è destinato ad assolvere.#
+Connettori,#In architettura del software, un connettore viene utilizzato per descrivere un modulo o un meccanismo software la cui funzione è quella di consentire la comunicazione e la cooperazione fra altri moduli, spesso incapsulando le dipendenze strutturali e funzionali fra di essi.#
+CSS3,#Versione 3 di CSS, che aumenta il supporto per animazioni ed elementi interattivi.#
+Cubit,#Cubits era una piattaforma Bitcoin multiuso per acquistare, scambiare, archiviare e accettare Bitcoin. Cubits offriva servizi di elaborazione dei pagamenti in Bitcoin europei con una piattaforma sicura e intuitiva per acquistare, scambiare, archiviare e accettare Bitcoin. #
+DAPPS,#acronimo di decentralized application (applicazione decentralizzata), che consiste in una applicazione eseguita su una rete P2P (peer-to-peer) di computer, anziché su un singolo computer.#
+Database,#è una base di dati, ovvero un archivio o un insieme di archivi in cui le informazioni sono strutturate e collegatetra loro secondo un particolare modello logico (relazionale, gerarchico, a oggetti, ecc), offrendo una gestione effciente dei dati ivi contenuti. #
+DevOps,#DevOps è un approccio allo sviluppo del software che si basa sulla comunicazione, la collaborazione e l’integrazione tra il team di sviluppo e quello di operations (Dev+Ops), e da qui il nome. La metodologia DevOps prevede un lavoro sinergico tra le due divisioni, quella degli sviluppatori, che si occupano della creazione del software e della scrittura del codice, e quella dei sistemisti, che gestiscono gli aspetti infrastrutturali e si occupano del mantenimento e della stabilità del software.#
+Docker,Docker è un progetto open source per automatizzare la distribuzione di app come contenitori portabili e autosufficienti che possono essere eseguiti nel cloud o in locale.
+DynamoDB,database NoSQL ideato da Amazon.com.
+Ethereum network Ropsten,#Ropsten Ethereum, noto anche come “Ethereum Testnet”, è una rete di test che esegue lo stesso protocollo utilizzato da Ethereum e viene utilizzata prima di essere distribuito sulla rete principale (Mainnet).#
+Ethereum Virtual Machine,#È  una macchina virtuale, ossia un software in grado di emulare una macchina fisica, attraverso un processo di virtualizzazione in cui vengono assegnate le risorse fisiche (CPU, RAM, disco fisso,… ) alle applicazioni che vengono eseguite al di sopra della macchina virtuale (tra cui il sistema operativo della stessa). Permette l’esecuzione di codici complessi (smart contracts) al di sopra della piattaforma Ethereum.#
+Firebase,è un database NoSQL che permette di salvare e sincronizzare i dati elaborati da applicazioni web e mobile.
+Framework,#La struttura operativa nella quale viene elaborato un dato software; un framework, in generale, include software di supporto, librerie, un linguaggio per gli script e altre componenti applicative che possono aiutare a realizzare le varie componenti di un progetto.#
+FreeLing,è una libreria C++ multilingua che fornisce funzionalità di analisi del linguaggio.
+Gamification,Sfrutta elementi del game-design con l’obiettivo di ottenere maggior coinvolgimento degli utenti nell’applicazione
+GitHub/GitLab,#Servizio web di hosting per repository, che usa il sistema di versionamento Git; può essere utilizzato anche per la condivisione e la modifica di file di testo e documenti revisionabili.#
+Grafana,Grafana è una suite open source di analisi e visualizzazione delle serie temporali per l'analisi delle infrastrutture e delle applicazioni
+Henshin MOVENS,#una piattaforma software per la mobilità, le città intelligenti e la gestione dell'\glo{IoT}#
+HTML5,Linguaggio di markup utilizzato per le stesure delle pagine WEB
+Hunpos,#HunPos è un Part of Speech-tagger, ovvero un software che dato un testo in ingresso, neeffettua l’analisi grammaticale e assegna ad ogni parola la sua categoria lessicale (articolo,aggettivo, verbo, eccetera).#
+iOS,Sistema operativo sviluppato per i dispositivi mobile della società Apple Inc. 
+IoT,#Acronimo dell'inglese Internet of Things, è un neologismo riferito all’estensione di Internet al mondo degli oggetti e dei luoghi concreti. Introdotto da Kevin Ashton, co-fondatore e direttore esecutivo di Auto-ID Center #
+Java,#Linguaggio di programmazione orientato agli oggetti a tipizzazione statica, con una propria piattaforma di elaborazione, sviluppato da Sun Microsystems nel 1995.#
+JavaScript,#Linguaggio di scripting orientato agli oggetti e agli eventi, comunemente utilizzato per la creazione, in siti web e applicazioni web, di effetti dinamici interattivi tramite funzioni invocate da eventi innescati dall’utente sulla pagina web.#
+Jsbayes,JsBayes è una libreria JavaScript ricca di funzionalità per la creazione di reti Bayesiane
+JSON,#JavaScript Object Notation, formato di testo per rappresentare oggetti composti di insiemi chiave-valore e sequenze di valori.#
+Kotlin,Kotlin è il linguaggio di programmazione ufficiale di Google. 
+Lambda,AWS Lambda è una piattaforma di calcolo senza server (serverless) guidata dagli eventi (event driven) fornita da Amazon come parte di Amazon Web Services. 
+Metamask,un'estensione per accedere alle applicazioni distribuite abilitate \glo{Ethereum}.
+Node.js,#framework javascript open-source ideato per realizzare applicazioni web scalabili. È basato su un approccio event-driven e permette di essere utilizzato non solo per applicazioni client-side, ma anche per quelle server-side attraverso il motore JavaScript V8.#
+Octalysis,E' un framework utile per analizzare e applicare la gamification
+Open source,#Un software di cui i detentori dei diritti rendono pubblico il codice sorgente, favorendone il libero studio e permettendo a programmatori indipendenti di apportarvi modifiche ed estensioni.#
+Otto Core drive,#Sono i principi su cui si basa octalysis: senso, realizzazione, autoespressione, possesso, influenza sociale, scarsità, imprevedibilità, prevenzione#
+Part of Speech-tagger,un software che legge il testo in alcune lingue e assegna parti del discorso a ogni parola con il suo significato grammaticale.
+Peer-to-peer,#Una rete P2P è un’infrastruttura in cui l’accesso ai dati avviene senza utilizzare server dedicati. Ogni dispositivo connesso, detto peer, può ricoprire sia il ruolo di client che il ruolo di server: #
+Plug-in,#Modulo aggiuntivo di un programma, utilizzato per aumentarne le funzioni.#
+Python,#Linguaggio di programmazione ad alto livello, orientato agli oggetti, usato per sviluppare applicazioni distribuite, scripting, computazione numerica e system testing.#
+React,Libreria JavaScript open source per lo sviluppo di interfacce utente.
+Redux,E' una architettura per scrivere applicazioni web basate su \glo{React}
+REST,#Stile architetturale riguardante la comunicazione client-server che prescrive l’uso metodi di comunicazione standard che non dipendano dallo stato del server, siano idempotenti e si riferiscano a risorse univoche ed eventualmente cachable.#
+Rete bayesiana,una rappresentazione grafica delle relazioni di dipendenza tra le variabili di un sistema.
+Rete Ethereum,una piattaforma decentralizzata per la creazione e pubblicazione peer-to-peer di \glo{smart contracts}
+Scripting,#è un linguaggio di programmazione interpretato,  destinato in genere a compiti di automazione del sistema operativo (batch) o delle applicazioni (macro), o a essere usato all’interno delle pagine web.  Scripting deriva dalla  parola  inglese  script  che  significa  “copione”.   La  parola  scripting  significa  quindi  “scrivere  il  copione”, dove copione identifica le istruzioni che il processore deve eseguire.#
+SCSS,Acronimo per Sassy Cascading Style Sheets; indica un soprainsieme della sintassi CSS3.
+Server-side,Lato server: fa riferimento a operazioni compiute dal server in un ambito client-server.
+Serverless,parlando di architetture si intende quelle architetture che consentono di creare ed eseguire applicazioni e servizi senza doverne gestire l’infrastruttura;
+Sistemi distribuiti,Un sistema distribuito è costituito da un insieme di entità autonome(componenti software e hardware) spazialmente separate che comunicano e coordinano tra loro le loro azioni attraverso scambio di messaggi.
+Skill,#una capacità o abilità di Alexa. Alexa mette a disposizione delle skill di default (come ad esempio la possibilità di riprodurre musica), inoltre i programmatori possono aggiungerne delle altre configurandone di nuove;#
+Smart contracts,#sono protocolli informatici che facilitano, verificano, o fanno rispettare, la negoziazione o l'esecuzione di un contratto, permettendo talvolta la parziale o la totale esclusione di una clausola contrattuale.#
+Staging,E una fase del ciclo di vita del software nella quale si assemblano tutti i componenti e si testa il corretto funzionamento del sistema.
+Stream processing,un paradigma di programmazione parallela che permette ad alcune applicazioni di sfruttare semplicemente una forma limitata di elaborazione parallela.
+Strumenti di versionamento,#E' un sistema che registra, nel tempo, i cambiamenti ad un file o ad una serie di file, così da poter richiamare una specifica versione in un secondo momento. #
+Swift,liguaggio di programmazione potente e intuitivo per macOS e iOS.
+Test di integrazione,Il testing di integrazione è il processo di verifica dell’interazione tra componenti software. 
+Test unitari,Attività di testing svolte su singole unità di software.
+Topic,E' una risorsa a cui vengono inviati dei messaggi da parte dei mittenti.
+Truffle,E' un framework per Etherum sviluppato in Javascript in grado di fornire un ambiente di sviluppo e testing. 
+Twelve-Factor App,Metodologia per la creazione di software come applicazioni di servizio. Queste best practice sono progettate per consentire alle applicazioni di essere costruite con portabilità e resilienza una volta implementate sul Web
+UI,#Acronimo di User Interface, ciò che si frappone tra una macchina e un utente, consentendo l’interazione tra i due. Tipicamente si parla di GUI (Graphical UI), ossia un’interfaccia composta da oggetti grafica.#
+Workflow,Modello processuale composto da un insieme di regole per la gestione dei gruppi di lavoro 
+React,Libreria open source per JavaScript per la creazione di interfacce grafiche utente.
+sistema embedded,E' un sistema di elaborazione specializzato integrato in un dispositivo fisico in modo da controllare le funzioni tramite un apposito programma software dedicato.

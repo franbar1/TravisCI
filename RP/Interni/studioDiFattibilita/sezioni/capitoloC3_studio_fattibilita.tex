@@ -1,0 +1,36 @@
+\section{Capitolato C3 – DevOps}
+
+\subsection{Informazioni generali}
+% ------ Inserire qui testo ------
+% 
+\begin{itemize}
+\item \textbf{Nome}: \textit{DevOps};\phantom{.}
+\item \textbf{Proponente}: \textit{Zucchetti};\phantom{.}
+\item \textbf{Committente}: \commitNameM\mbox{} e \commitNameS.
+\end{itemize}
+
+\subsection{Descrizione del capitolo}
+Zucchetti propone lo sviluppo di \glo{Grafana}+\glo{Bayes} (G\&B):\\
+ un sistema che, utilizzando metodi di intelligenza artificiale su flussi di dati raccolti, rende disponibili dei grafici statistici.
+
+\subsection{Finalità di progetto}
+L'azienda richiede:
+\begin{itemize}
+    \item un \glo{plug-in} estendibile con Grafana, scritto in linguaggio JavaScript con lo scopo di leggere file \glo{JSON};
+    \item la definizione di una rete Bayesiana associando i nodi della rete ad un flusso di dati. 
+\end{itemize}
+Una volta prestabilite delle regole temporali si riapplica il calcolo delle probabilità legate alla rete Bayesiana.
+\\
+I dati calcolati vengono inviati al sistema Grafana con il fine di collegare nuovi flussi di monitoraggio.
+Il risultato del plug-in dovrà essere una dashboard o un insieme di grafici.
+\subsection{Tecnologie interessate}
+\begin{itemize}
+    \item \textbf{JavaScript}: linguaggio di \glo{scripting} per la programmazione web;\phantom{.}
+    \item \textbf{Grafana}: software open source che consente il monitoraggio e la visualizzazione dei dati;\phantom{.}
+    \item \textbf{Rete Bayesiana}: modello grafico probabilistico;\phantom{.}
+    \item \textbf{\glo{jsbayes}}: libreria open source per la gestione dei calcoli della rete Bayesiana;\phantom{.}
+    \item \textbf{\glo{DevOps}}: servizio cloud utilizzato per gestire le fatture elettroniche tra clienti e il ministero.
+\end{itemize}   
+
+\subsection{Conclusioni}
+Il team ha valutato positivamente le proposta del capitolato perchè sviluppare plug-in in JavaScript per Grafana risulta particolarmente interessante. Nonostante ciò è stato scartato perché trattare e gestire dati tramite reti Bayesiane appare fin troppo complesso.

@@ -1,0 +1,267 @@
+\section{Test di accettazione}
+
+\begin{center}
+\renewcommand{\arraystretch}{2.2}
+\rowcolors{3}{tableRow}{}
+
+\begin{longtable}{ c m{12cm} c }
+	
+	\rowcolor[HTML]{232f3e}
+
+	\rowcolors{3}{tableRow}{}
+	\color[HTML]{FFFFFF} \textbf{Id Test} & \color[HTML]{FFFFFF} \centering\textbf{Descrizione} & \color[HTML]{FFFFFF} \textbf{Stato} \\
+\endhead
+\rowcolor{white}\multicolumn{2}{c}
+   { Continua nella pagina successiva} \\
+   \endfoot
+   \caption [Test di validazione]{Test di validazione}
+	\label{tabella:testVal}
+   \endlastfoot
+%REGISTRAZIONE----------------------------------------------------------------
+	TA0F1  & Il sistema deve permettere ad un nuovo utente di registrarsi tramite Amazon. All'utente viene chiesto di: 
+	\begin{itemize}
+		\item verificare che sia possibile premere sul pulsante per la registrazione;
+		\item verificare che sia possibile accedere alla pagina di registrazione di Amazon;
+		\item inserire tutti i dati per la registrazione;
+		\item verificare che a completamento della registrazione si venga reindirizzati alla pagina principale dell'applicativo.
+	\end{itemize} 																																								& n.i. \\ 
+%lOGIN------------------------------------------------------------------------
+	TA0F2  & Il sistema deve permettere all'utente di effettuare il login tramite Amazon. All'utente viene chiesto di:
+	 \begin{itemize}
+		\item verificare che sia possibile premere sul pulsante per accedere al sistema;
+		\item verificare che si venga reindirizzati alla pagina di login di Amazon;
+		\item inserire email e password per fare il login;
+		\item verificare che si venga reindirizzati alla homepage dell’applicazione dopo il login.
+	\end{itemize}  																																								& n.i. \\ 
+%CREAZIONE WORKFLOW------------------------------------------------------------			
+	TA0F3  & Il sistema deve permettere all'utente autenticato la creazione di un workflow personalizzato. All'utente viene chiesto di:
+	\begin{itemize}			
+		\item inserire il nome del workflow;			
+		\item modificare il messaggio di benvenuto;			
+		\item selezionare i blocchi desiderati tra quelli disponibili;			
+		\item confermare la configurazione del workflow;			
+		\item verificare l'avvenuta creazione del workflow.			
+	\end{itemize}  																												      											& n.i. \\                             
+	TA0F3  & L'utente autenticato deve poter configurare un blocco tra quelli selezionati. All'utente viene chiesto di:
+	\begin{itemize}			
+		\item scegliere il tipo di blocco da inserire;			
+	\end{itemize}                                           		    			                                                  											& n.i. \\
+	TAOF3   & L'applicazione deve visualizzare eventuali errori riguardanti la configurazione del workflow.                            											& n.i. \\
+	TA0F4   & L'utente autenticato deve poter modificare i workflow creati precedentemente. All'utente viene chiesto di: 
+	\begin{itemize}			
+		\item selezionare il workflow da modificare;			
+		\item modificare il nome;			
+		\item modificare il testo di benvenuto;	
+		\item verificare l'avvenuta modifica.			
+	\end{itemize}   																												   											& n.i. \\
+	TA0F5  & L'utente autenticato deve poter eliminare i workflow creati precedentemente. All'utente viene chiesto di: 
+	\begin{itemize}			
+		\item selezionare il workflow da eliminare;			
+		\item cliccare sul pulsante di eliminazione;			
+		\item cliccare sul pulsante per confermare;			
+		\item verificare l'avvenuta eliminazione.			
+	\end{itemize}     																												   											& n.i. \\
+	TA0F6  & L'utente autenticato deve poter ricercare un workflow specifico tra quelli disponibili tramite chiave di ricerca. All'utente viene chiesto di: 
+	\begin{itemize}
+		\item inserire una keyword nella barra di ricerca;
+		\item avviare la ricerca;
+		\item verificare che sia possibile ordinare e/o filtrare i risultati.
+	\end{itemize}        																											   											& n.i. \\
+	TA0F7  & L'utente autenticato deve poter visualizzare i workflow precedentemente creati.                                        											& n.i. \\
+%BLOCCO FEED RSS--------------------------------------------------------------											
+	TA0F8  & L'utente autenticato deve poter inserire nel workflow un \BFeedRSS. All'utente viene chiesto di:
+	 \begin{itemize}											
+		\item selezionare il \BFeedRSS;											
+		\item inserire l'indirizzo di un \BFeedRSS											
+		\item verificare l'avvenuto inserimento del blocco.											
+	\end{itemize}    																												   											& n.i. \\
+%BLOCCO METEO----------------------------------------------------------------------											
+	TA0F9  & L'utente autenticato deve poter inserire nel workflow un \BMeteo. All'utente viene chiesto di: 
+	\begin{itemize}											
+		\item selezionare il \BMeteo;											
+		\item selezionare la scala termometrica desiderata;											
+		\item selezionare una certa località tramite geolocalizzazione oppure inserire manualmente il nome della città;											
+		\item verificare l'avvenuto inserimento del blocco.											
+	\end{itemize}   																												   											& n.i. \\
+%BLOCCO INSTAGRAM----------------------------------------------------------------											
+	TA0F10   & L'utente autenticato deve poter inserire nel workflow un \BInstagram. All'utente viene chiesto di: 
+	\begin{itemize}											
+		\item selezionare il \BInstagram;											
+		\item inserire le credenziali d'accesso a Instagram;											
+		\item verificare l'avvenuto accesso;											
+		\item verificare l'avvenuto inserimento del blocco											
+	\end{itemize} & n.i. \\                                          											
+	TA0F11  & L'utente autenticato tramite Amazon Alexa deve poter ascoltare le notifiche di Instagram.                                       											& n.i. \\
+%BLOCCO FACEBOOK-----------------------------------------------------------------										
+	TA0F12  & L'utente autenticato deve poter inserire nel workflow un \BFacebook. All'utente viene chiesto di: \begin{itemize}										
+		\item selezionare il \BFacebook;										
+		\item inserire le credenziali d'accesso a Facebook;										
+		\item verificare l'avvenuto accesso;										
+		\item verificare l'avvenuto inserimento del blocco.										
+	\end{itemize} & n.i. \\										
+	TA0F13   & L'utente autenticato tramite Alexa deve poter ascoltare le notifiche di Facebook non ancora lette.                        										& n.i. \\
+	TA1F14   & L'utente autenticato tramite Alexa deve poter ascoltare gli ultimi post di Facebook della bacheca.                      										& n.i. \\
+%BLOCCO LINKEDIN-----------------------------------------------------------------										
+	TA0F15   & L'utente autenticato deve poter inserire nel workflow un \BLinkedIn. All'utente viene chiesto di: 
+	\begin{itemize}										
+		\item selezionare il \BLinkedIn;										
+		\item inserire le credenziali d'accesso di LinkedIn;										
+		\item verificare l'avvenuto accesso;										
+		\item verificare l'avvenuto inserimento del blocco.										
+	\end{itemize} 																													    										& n.i. \\										
+	TA1F16   & L'utente autenticato tramite Amazon Alexa deve poter ascoltare le notifiche di LinkedIn                                         										& n.i. \\
+	TA0F16   & L'utente autenticato tramite Amazon Alexa deve poter ascoltare gli ultimi messaggi di LinkedIn                                  											& n.i. \\
+%BLOCCO MESSENGER--------------------------------------------------------------- 										
+	TA0F17   & L'utente autenticato deve poter inserire nel workflow un \BMessenger. All'utente viene chiesto di: 
+	\begin{itemize}										
+		\item selezionare il \BMessenger;										
+		\item inserire le credenziali d'accesso a Facebook Messenger;										
+		\item verificare l'avvenuto accesso;										
+		\item verificare l'avvenuto inserimento del blocco.										
+	\end{itemize} 																	                                                    										& n.i. \\
+	TA0F18   & L'utente autenticato deve poter inserire le credenziali d'accesso a Facebook Messenger.                          										& n.i. \\
+	TA0F19   & L'utente autenticato tramite Amazon Alexa deve poter ascoltare gli ultimi messaggi di Facebook Messenger.                    										& n.i. \\
+%BLOCCO SVEGLIA------------------------------------------------------------------										
+	TA0F20   & L'utente autenticato deve poter inserire nel workflow un \BSveglia. All'utente viene chiesto di: \begin{itemize}										
+		\item selezionare il \BSveglia;										
+		\item impostare l'orario di una sveglia;										
+		\item scegliere la suoneria per la sveglia;										
+		\item verificare l'avvenuto inserimento.										
+	\end{itemize} 																																								& n.i. \\  	
+	TA0F21   & L'utente autenticato deve poter modificare il workflow un \BSveglia. All'utente viene chiesto di: \begin{itemize}										
+		\item selezionare il \BSveglia;										
+		\item modificare l'orario di una sveglia;										
+		\item modificare la suoneria per la sveglia;										
+		\item verificare l'avvenuta modifica.										
+	\end{itemize}    																																							& n.i. \\
+	%TA0F23   & L'utente autenticato deve poter fermare la sveglia mentre questa sta suonando                                            										& n.i. \\
+%BLOCCO MAIL-------------------------------------------------------------------										
+	TA0F22   & L'utente autenticato deve poter inserire nel workflow un \BMail. All'utente viene chiesto di: \begin{itemize}										
+		\item selezionare il \BMail;										
+		\item inserire le credenziali d'accesso di Gmail;										
+		\item verificare l'avvenuto accesso;										
+		\item verificare l'avvenuto inserimento del blocco.										
+	\end{itemize} 																																								& n.i. \\        
+	TA0F23   & L'utente tramite Amazon Alexa deve poter leggere le ultime mail non ancora lette.                                              										& n.i. \\
+	TA0F24   & Amazon Alexa deve riferire all'utente il numero di mail non ancora lette.                                                										& n.i. \\
+%BLOCCO TELEGRAM---------------------------------------------------------------										
+	TA0F25   & L'utente autenticato deve poter inserire nel workflow un \BTelegram. All'utente viene chiesto di: \begin{itemize}										
+		\item selezionare il \BTelegram;										
+		\item inserire le credenziali d'accesso a Telegram										
+		\item verificare l'avvenuto accesso;										
+		\item verificare l'avvenuto inserimento del blocco.										
+	\end{itemize} 																																								& n.i. \\       
+	TA0F26   & L'utente autenticato tramite Amazon Alexa deve poter leggere gli ultimi messaggi di una persona o di un gruppo.                     										& n.i. \\
+	TA0F27   & L'utente autenticato tramite Amazon Alexa potrà riprodurre gli ultimi messaggi vocali di una persona o di un gruppo.                										& n.i. \\
+%BLOCCO SLACK------------------------------------------------------------------------										
+	TA0F28   & L'utente autenticato deve poter inserire nel workflow un \BSlack\textsubscript{G}. All'utente viene chiesto di: \begin{itemize}										
+		\item selezionare il \BSlack;										
+		\item inserire le credenziali d'accesso a Slack										
+		\item verificare l'avvenuto accesso;										
+		\item verificare l'avvenuto inserimento del blocco.										
+	\end{itemize} & n.i. \\    	                                          										
+	TA0F29   & L'utente autenticato tramite Amazon Alexa deve poter leggere gli ultimi messaggi di un certo canale.                             										& n.i. \\
+	TA0F30   & L'utente autenticato deve poter selezionare il canale di cui leggere i messaggi.                                          										& n.i. \\
+%BLOCCO CALENDARIO------------------------------------------------------------------										
+	TA0F31   & L'utente autenticato deve poter inserire nel workflow un \BCalendario. All'utente viene chiesto di: \begin{itemize}										
+		\item selezionare il \BCalendario;										
+		\item inserire le credenziali d'accesso a Google Calendar;										
+		\item verificare l'avvenuto accesso;										
+		\item verificare l'avvenuto inserimento del blocco.										
+	\end{itemize} 																																								& n.i. \\   
+	TA0F32   & L'utente autenticato tramite Amazon Alexa deve poter leggere gli eventi giornalieri.                                             										& n.i. \\
+	TA0F33   & L'utente autenticato deve poter inserire un evento all'interno di Google Calendar.                                        										& n.i. \\
+%BLOCCO YOUTUBE------------------------------------------------------------------										
+	TA0F34   & L'utente autenticato deve poter inserire nel workflow un \BYouTube. All'utente viene chiesto di: \begin{itemize}										
+		\item selezionare il \BYouTube;										
+		\item inserire le credenziali d'accesso a YouTube;										
+		\item verificare l'avvenuto accesso;										
+		\item verificare l'avvenuto inserimento del blocco.										
+	\end{itemize} 																																								& n.i. \\ 
+	TA0F35   & L'utente autenticato tramite Amazon Alexa deve poter riprodurre gli ultimi video di un canale YouTube.                           										& n.i. \\
+	TA0F36   & L'utente autenticato deve poter inserire modificare il link del canale YouTube.                                          										& n.i. \\
+%BLOCCO YOUTUBE MUSIC-----------------------------------------------------------										
+	TA0F37   & L'utente autenticato deve poter inserire nel workflow un \BYouTubeMusic. All'utente viene chiesto di: \begin{itemize}										
+		\item selezionare il \BYouTubeMusic;										
+		\item inserire le credenziali d'accesso a YouTube Music;										
+		\item verificare l'avvenuto accesso;										
+		\item verificare l'avvenuto inserimento del blocco.										
+	\end{itemize} 																																								& n.i. \\ 
+	TA0F38   & L'utente autenticato tramite Amazon Alexa deve poter riprodurre le canzoni di una playlist YouTube Music.                       										& n.i. \\
+	TA0F39   & L'utente autenticato deve poter modificare il link della playlist, del canale o della canzone YouTube Music.             										& n.i. \\
+%BLOCCO RADIO-----------------------------------------------------------										
+	TA0F40   & L'utente autenticato deve poter inserire nel workflow un \BRadio. All'utente viene chiesto di: \begin{itemize}										
+		\item selezionare il \BRadio;										
+		\item inserire l'indirizzo del Feed RSS di un canale radio;										
+		\item verificare l'avvenuto inserimento del blocco.										
+	\end{itemize} 																																								& n.i. \\ 
+	TA0F41  & L'utente autenticato deve poter scegliere il canale radio preferito tra quelli disponibili.                               										& n.i. \\
+%BLOCCO PROGRAMMAZIONE TV-----------------------------------------------------------										
+	TA0F42   & L'utente autenticato deve poter inserire nel workflow un \BTV. All'utente viene chiesto di: \begin{itemize}										
+		\item selezionare il \BTV;										
+		\item inserire l'indirizzo del Feed RSS di un canale televisivo;										
+		\item verificare l'avvenuto inserimento del blocco.										
+	\end{itemize} 																																								& n.i. \\ 	
+	TA0F43   & L'utente autenticato deve poter scegliere il canale televisivo preferito tra quelli disponibili.                          										& n.i. \\
+%BLOCCO SPOTIFY-----------------------------------------------------------    										
+	TA0F44   & L'utente autenticato deve poter inserire nel workflow un \BSpotify. All'utente viene chiesto di: \begin{itemize}										
+		\item selezionare il \BSpotify;										
+		\item inserire le credenziali d'accesso a Spotify;										
+		\item verificare l'avvenuto accesso;										
+		\item verificare l'avvenuto inserimento del blocco.										
+	\end{itemize} 																																								& n.i. \\  
+	TA0F45   & L'utente autenticato tramite Amazon Alexa deve poter riprodurre una canzone.                                               										& n.i. \\
+	TA0F46   & L'utente autenticato tramite Amazon Alexa deve poter riprodurre una playlist.                                             										& n.i. \\
+%BLOCCO CINEMA-----------------------------------------------------------      										
+	TA0F47   & L'utente autenticato deve poter inserire nel workflow un \BCinema. All'utente viene chiesto di: \begin{itemize}										
+		\item selezionare il \BCinema;										
+		\item inserire testualmente il nome di un cinema o selezionare quello più vicino tra quelli disponibili tramite geolocalizzazione										e
+		\item verificare l'avvenuto inserimento del blocco.										
+	\end{itemize} 																																								& n.i. \\  
+	TA0F48   & L'utente autenticato deve poter modificare il nome del cinema più vicino.                                                 										& n.i. \\
+	TA0F49   & L'utente autenticato tramite Amazon Alexa deve sapere la programmazione odierna di un certo cinema.                              										& n.i. \\
+	TA0F50   & L'utente autenticato tramite Amazon Alexa deve sapere la programmazione di una determinata ora di un certo cinema.                              										& n.i. \\
+%BLOCCO TRASPORTI-----------------------------------------------------------   										
+	TA0F51   & L'utente autenticato deve poter inserire nel workflow un \BTrasporti. All'utente viene chiesto di: \begin{itemize}										
+		\item selezionare il \BTrasporti;										
+		\item selezionare la località di partenza;										
+		\item selezionare la località di arrivo;																				
+		\item verificare l'avvenuto inserimento del blocco.										
+	\end{itemize} 																																								& n.i. \\
+	TA0F52   & L'utente autenticato deve poter modificare la località di partenza.                                                       										& n.i. \\
+	TA0F53   & L'utente autenticato deve poter modificare la località di arrivo.                                                        										& n.i. \\
+	TA0F54   & L'utente autenticato tramite Amazon Alexa sa qual è il prossimo treno disponibile.                                            										& n.i. \\
+%BLOCCO LISTA-----------------------------------------------------------   										
+	TA0F55   & L'utente autenticato deve poter inserire nel workflow un \BLista. All'utente viene chiesto di: 										
+	\begin{itemize}										
+		\item selezionare il \BLista;										
+		\item aggiungere elementi alla lista;										
+		\item verificare l'avvenuta creazione della lista.										
+		\item verificare l'avvenuto inserimento del blocco.										
+	\end{itemize}   																																						                                         										& n.i. \\
+	TA0F56   & L'utente autenticato tramite Amazon Alexa deve sapere quali elementi ci sono nella lista.                                 										& n.i. \\
+%BLOCCO SICUREZZA------------------------------------------------------ 										
+	TA0F57   & L'utente autenticato deve poter inserire nel workflow un \BSicurezza. All'utente viene chiesto di: 										
+	\begin{itemize}										
+		\item selezionare il \BSicurezza;										
+		\item aggiungere un PIN;										
+		\item verificare l'avvenuta creazione del blocco sicurezza.						
+	\end{itemize}   																																							& n.i. \\
+%BLOCCO KINDLE
+	TA0F58 & L'utente autenticato deve poter inserire nel workflow un \BKindle. All'utente viene chiesto di:
+	\begin{itemize}										
+		\item selezionare il \BKindle;										
+		\item aggiunge un link o inserire un file PDF/EPUB;										
+		\item verificare l'avvenuta creazione del \BKindle.						
+	\end{itemize}   										& n.i\\
+%LOGOUT
+	TA0F59   & L'utente autenticato deve poter effettuare il logout. All'utente viene chiesto di: 										
+	\begin{itemize}										
+		\item cliccare sul pulsante di logout;						
+		\item verificare l'avvenuto logout.						
+	\end{itemize}   												                                                                     										& n.i. \\
+
+\end{longtable}
+
+\end{center}
+

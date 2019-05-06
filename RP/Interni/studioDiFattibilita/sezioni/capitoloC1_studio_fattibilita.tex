@@ -1,0 +1,47 @@
+\section{Capitolato C1 – Butterfly}
+
+\subsection{Informazioni generali}
+
+\begin{itemize}
+\item \textbf{Nome}: \textit{Butterfly};\phantom{.}
+\item \textbf{Proponente}: \textit{Imola Informatica};\phantom{.}
+\item \textbf{Committente}: \commitNameM\mbox{} e \commitNameS.
+\end{itemize}
+
+\subsection{Descrizione del capitolo}
+Imola Informatica propone lo sviluppo di una serie di componenti che accentrano e standardizzano segnalazioni da diversi \glo{strumenti di versionamento} e che 
+permettono una gestione automatizzata e personalizzabile di esse.
+
+\subsection{Finalità del progetto}
+
+L’azienda propone una soluzione che prevede lo sviluppo di quattro tipologie di componenti che si interfacciano con gli strumenti di versionamento e provvedono a riportare le segnalazioni nella forma desiderata.
+\\
+Tali tipologie di componenti sono:
+\begin{itemize}
+    \item \textbf{\glo{Producers}}:  recuperano le segnalazioni e le pubblicano sotto forma di messaggi;
+    \item \textbf{\glo{Brokers}}: istanziano e gestiscono i \glo{Topic};
+    \item \textbf{\glo{Consumers}}: gestiscono l'abbonamento ai Topic, recuperano i messaggi e li inviano ai destinatari;
+    \item \textbf{\glo{Componente custom specifico}}: recupera i messaggi da un Topic e li inoltra alla persona interessata.
+
+\end{itemize}
+\item Le componenti devono avere anche altre funzionalità:
+\begin{itemize}
+    \item Rispettare la metodologia di sviluppo “\glo{The Twelve-Factor App}”;
+    \item Esporre delle \glo{API REST};
+    \item Essere supportate da \glo{test unitari} e da \glo{test di integrazione};
+    \item Essere istanziate tramite la tecnologia \glo{Docker}.
+    
+\end{itemize}
+
+\subsection{Tecnologie interessate}
+\begin{itemize}
+    \item \textbf{\glo{Java}, \glo{Python}, Node.js}: utilizzate per lo sviluppo dei componenti;
+    \item \textbf{\glo{Apache Kafka}}: piattaforma open source di \glo{stream processing} utilizzabile come Broker;
+    \item \textbf{Docker}: tecnologia di containerizzazione utilizzata per istanziare i componenti;
+    \item \textbf{\glo{REST}}: stile architetturale software per \glo{sistemi distribuiti}.
+\end{itemize}   
+
+\subsection{Conclusioni}
+Il gruppo ha dimostrato grande interesse nella proposta del capitolato in quanto permette di lavorare con tecnologie molto diffuse nell’ambito lavorativo.
+\\Il fattore decisivo che non ha reso il primo capitolato come prima scelta del gruppo è stata la ripetitività nello sviluppo di componenti simili tra loro.
+

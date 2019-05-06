@@ -1,0 +1,94 @@
+amazon web services
+android
+apache kafka
+api gateway
+api rest
+apprendimento supervisionato
+attori
+aurora serverless
+bayes
+blockchain
+bootstrap
+broker
+capitolato
+car sharing
+città intelligenti
+client-side
+cloud computing
+componente custom specifico
+connettori
+css3
+cubit
+dapps
+database
+devops
+docker
+dynamodb
+ethereum network ropsten
+ethereum virtual machine
+firebase
+framework
+freeling
+gamification
+github/gitlab
+grafana
+henshin movens
+html5
+hunpos
+ios
+iot
+java
+javascript
+jsbayes
+json
+kotlin
+lambda
+metamask
+node.js
+octalysis
+open source
+otto core drive
+part of speech-tagger
+peer-to-peer
+plug-in
+python
+react
+redux
+rest
+rete bayesiana
+rete ethereum
+scripting
+scss
+server-side
+serverless
+sistemi distribuiti
+skill
+smart contracts
+staging
+stream processing
+strumenti di versionamento
+swift
+test di integrazione
+test unitari
+topic
+truffle
+twelve-factor app
+ui
+workflow
+sistema embedded
+slack
+google hangouts
+ciclo di vita
+piano di progetto
+piano di qualifica
+verifica
+validazione
+caso d'uso
+architettura
+stakeholder
+voice dialog flow
+spice
+pdca
+diagrammi di gantt
+indice di gulpease
+iso/iec 9126

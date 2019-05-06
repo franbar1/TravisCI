@@ -1,0 +1,54 @@
+﻿\begin{itemize}
+        \item \textbf{Incomplete process}: il processo è incompleto, non pienamente implementato.
+        \item \textbf{Performed}: il processo attuato raggiunge i suoi risultati
+            \begin{enumerate}
+                \item process performance.
+            \end{enumerate}
+        \item \textbf{Managed process}: il processo è controllato, la sua implementazione è pianificata, monitorata e adattata
+            \begin{enumerate}
+                \item performance management;
+                \item work product management.
+            \end{enumerate}
+        \item \textbf{Established process}:  il processo è eseguito basandosi su principi dell’ingegneria del software ed è documentato per garantire la tua capacità di raggiungere i tuoi obiettivi
+            \begin{enumerate}
+                \item process definition;
+                \item process deployment.
+            \end{enumerate}
+        \item \textbf{Predictable process}: il processo viene eseguito costantemente entro limiti definiti per raggiungere i risultati attesi
+            \begin{enumerate}
+                \item process measurement;
+                \item process control.
+            \end{enumerate}
+        \item \textbf{Optimizing process}: il processo migliora e si adatta dinamicamente per raggiungere gli obiettivi azienda
+            \begin{enumerate}
+                \item process innovation;
+                \item continuos optimization.
+            \end{enumerate}
+    \end{itemize}
+
+
+    capitolo 2 sezione 1
+
+2.1.3 Verifica del software
+Al fine di verificare se un determinato elemento soddisfa i requisiti richiesti, `e necessario rispettare
+le seguenti indicazioni:
+ commenti al codice: per rendere la verifica pi`u agevole.
+ prevenzione dei bug: nei limiti del possibile, accertare l’assenza di bug nel codice.
+Vengono utilizzate le seguenti metriche definite nelle Norme di Progettoin sezione:
+ tempo medio di individuazione dei bug.
+2.1.4 Gestione dei test
+Per garantire una gestione efficace dell’analisi `e necessario stabilire delle misurazioni sull’esecuzione
+di essa. Di conseguenza saranno utilizzate le seguenti metriche:
+ percentuale di test passati;
+ percentuale di test case falliti;
+ tempo medio del team di sviluppo per la risoluzione dei bug.
+2.1.5 Versionamneto
+Saranno monitorati frequentemente i commit, sia dal punto di vista dei contenuti che dal loro
+numero. Gli obiettivi da rispettare sono:
+ commit frequenti: il codice deve essere mantenuto aggiornato.
+ poche modifiche: per monitorare e verificare facilmente il ciclo di vita del software.
+Le metriche utilizzate sono:
+ numero di commit a settimana;
+ percentuale di build di successo per settimana.
+
++ TABELLA

@@ -1,0 +1,219 @@
+\section{Requisiti}
+
+In questa sezione verranno assegnati dei codici ai requisiti, in modo da semplificarne l'identificazione. La procedura per stabilire l'identificatore di un requisito è descritta nella sezione 2.2.3 del documento \docNameVersionNdP{}.
+\subsection{Requisiti funzionali}
+
+
+\begin{center}
+\renewcommand{\arraystretch}{2.2}
+\rowcolors{3}{tableRow}{}
+
+\begin{longtable}{cm{8cm}c }
+	
+	\rowcolor[HTML]{232f3e}
+
+	\rowcolors{3}{tableRow}{}
+	\color[HTML]{FFFFFF} \textbf{Id Requisito} & \color[HTML]{FFFFFF} \centering\textbf{Descrizione} & \color[HTML]{FFFFFF} \textbf{Fonte} \\
+\endhead
+\rowcolor{white}\multicolumn{3}{c}
+   { Continua nella pagina successiva} \\
+   \endfoot
+   \caption [Requisiti Funzionali]{Requisiti Funzionali}
+	\label{tabella:reqP1}
+   \endlastfoot
+%REGISTRAZIONE----------------------------------------------------------------
+	R0F1 & Il sistema deve permettere ad un nuovo utente di registrarsi tramite Amazon  &  UC1 \\ 
+%lOGIN------------------------------------------------------------------------
+	R0F2 & Il sistema deve permettere all'utente di effettuare il login tramite Amazon  & UC2\\ 
+%CREAZIONE WORKFLOW------------------------------------------------------------
+	R0F3 & Il sistema deve permettere all'utente autenticato la creazione di un workflow personalizzato & UC3\\
+	R0F3.1 & L'applicazione permetterà all'utente autenticato di inserire il nome del workflow  &  UC3.1 \\ 
+	R0F3.2 & L'applicazione permetterà all'utente autenticato di modificare il messaggio di benvenuto nel workflow &  UC3.2 \\
+	R0F3.3 & L'applicazione permetterà all'utente autenticato di selezionare i blocchi desiderati tra quelli disponibili &  UC3.3 \\
+	R0F3.4 & L'applicazione permetterà all'utente autenticato di configurare un blocco tra quelli selezionati &  UC3.4 \\
+	R0F3.5 & L'applicazione permetterà all'utente autenticato di inserire un \BFiltro{} &  UC3.3.3 \\
+	R0F3.6 & L'applicazione permetterà all'utente autenticato di salvare un workflow personalizzato &  UC3.5 \\
+	R0F3.7 & L'applicazione deve visualizzare eventuali errori riguardanti la configurazione del workflow &  UC3.6 \\
+	R0F3.8 & L'applicazione permetterà all'utente di modificare i workflow creati precedentemente &  UC4 \\
+	R0F3.8 & L'applicazione permetterà all'utente di eliminare i workflow creati precedentemente &  UC5 \\
+	R0F3.8 & L'applicazione permetterà all'utente di ricercare un workflow specifico tra quelli disponibili tramite chiave di ricerca &  UC6 \\
+	R0F3.9 & L'applicazione permetterà all'utente di modificare la keyword di ricerca e ricercare un altro workflow tra quelli disponibili &  Interno \\
+	R0F3.10 & L'applicazione permetterà all'utente filtrare i risultati della ricerca per data di creazione &  UC6.3 \\
+	R0F3.11 & L'applicazione permetterà all'utente di visualizzare i workflow precedentemente creati &  UC6.3 \\
+% BLOCCO FEED RSS--------------------------------------------------------------
+	R0F4 & L'applicazione permetterà all'utente autenticato di inserire nel workflow un \BFeedRSS{} &  UC3.3.2 \\
+	R0F4.1 & L'applicazione permetterà all'utente autenticato di modificare l'indirizzo di un \BFeedRSS{} &  UC3.4.2 \\
+	R2F4.2 & L'utente potrà, tramite Alexa, ascoltare il risultato prodotto dal feed RSS & Interno \\
+%BLOCCO METEO----------------------------------------------------------------------
+	R0F5 & L'applicazione permetterà all'utente autenticato di inserire nel workflow un \BMeteo{} &  UC3.3.4 \\
+	R0F5.1 & L'applicazione permetterà all'utente autenticato di selezionare la scala termometrica desiderata & Interno \\
+	R0F5.2 & L'utente potrà, tramite Alexa, ricevere informazioni meteo di una certa località  & Interno \\
+	R0F5.3 & L'utente potrà selezionare una certa località tramite geolocalizzazione & UC3.4.4 \\
+	R0F5.4 & L'utente potrà inserire testualmente il nome della località sulla quale ricevere le previsioni meteo & UC3.4.4 \\
+%BLOCCO INSTAGRAM----------------------------------------------------------------
+	R0F6 & L'utente potrà inserire all'interno del workflow un \BInstagram{} & UC3.3.5 \\
+	R0F6.1 & L'utente potrà inserire le credenziali d'accesso a Instagram & UC3.4.5 \\
+	R0F6.2 & L'utente potrà, tramite Alexa, ascoltare le notifiche di Instagram & Interno \\
+	R2F6.3 & L'utente potrà, tramite Alexa, visualizzare le foto di un certo profilo Instagram & Interno \\
+%BLOCCO FACEBOOK-----------------------------------------------------------------
+	R0F7 & L'utente potrà inserire all'interno del workflow un \BFacebook{} & UC3.3.6 \\
+	R0F7.1 & L'utente potrà inserire le credenziali d'accesso a Facebook & UC3.4.6 \\
+	R0F7.2 & L'utente potrà, tramite Alexa, ascoltare le notifiche di Facebook non ancora lette & Interno \\
+	R1F7.3 & L'utente potrà, tramite Alexa, visualizzare gli ultimi post di Facebook dei suoi amici & Interno \\
+	R2F7.4 & L'utente tramite Alexa può pubblicare un post all'interno di Facebook & Interno \\ 
+%BLOCCO LINKEDIN-----------------------------------------------------------------
+	R0F8 & L'utente potrà inserire all'interno del workflow un \BLinkedIn{} & UC3.3.8 \\
+	R0F8.1 & L'utente potrà inserire le credenziali d'accesso a LinkedIn & UC3.4.8 \\
+	R0F8.2 & L'utente potrà, tramite Alexa, ascoltare le notifiche di LinkedIn  & Interno \\
+	R1F8.3 & L'utente potrà, tramite Alexa, ascoltare gli ultimi messaggi di LinkedIn & Interno \\
+%BLOCCO MESSENGER---------------------------------------------------------------
+	R0F9 & L'utente potrà inserire all'interno del workflow un \BMessenger{} & UC3.3.7 \\
+	R0F9.1 & L'utente potrà inserire le credenziali d'accesso a Facebook Messenger & UC3.4.7 \\
+	R0F9.2 & L'utente potrà, tramite Alexa, ascoltare gli ultimi messaggi di Facebook Messenger & Interno \\
+	R2F9.3 & L'utente potrà, tramite Alexa, rispondere ad un messaggio su Facebook Messenger & Interno \\
+%BLOCCO SVEGLIA------------------------------------------------------------------
+	R0F10 & L'utente potrà inserire all'interno del workflow un \BSveglia{} & UC3.3.9 \\
+	R0F10.1 & L'applicazione permetterà all'utente di poter impostare l'orario di una sveglia & UC3.4.9 \\
+	R0F10.2 & L'applicazione permetterà all'utente di poter modificare l'orario di una sveglia & Interno \\
+	R0F10.3 & L'applicazione permetterà all'utente di poter scegliere la suoneria della sveglia & Interno \\
+	R0F10.4 & L'applicazione permetterà all'utente di poter fermare la sveglia mentre questa sta suonando & Interno \\
+%BLOCCO MAIL-------------------------------------------------------------------
+	R0F11 & L'utente potrà inserire all'interno del workflow un \BMail{} & UC3.3.12 \\
+	R0F11.1 & L'utente potrà inserire le credenziali d'accesso a Gmail & UC3.4.12 \\
+	R0F11.2 & L'utente potrà, tramite Alexa, leggere le ultime mail non ancora lette & Interno \\
+	R0F11.3 & Alexa deve riferire all'utente il numero di mail non ancora lette & Interno \\
+	R2F11.4 & L'utente potrà, tramite Alexa, rispondere ad una mail dopo che Alexa l'ha letta & Interno \\
+%BLOCCO TELEGRAM----------------------------------------------------------------
+	R0F12 & L'utente potrà inserire all'interno del workflow un \BTelegram{} & UC3.3.11 \\
+	R0F12.1 & L'utente potrà inserire le credenziali d'accesso a Telegram & UC3.4.11 \\
+	R0F12.2 & L'utente potrà, tramite Alexa, leggere gli ultimi messaggi da una persona o un gruppo & Interno \\
+	R1F12.3 & L'utente tramite Alexa potrà riprodurre gli ultimi messaggi vocali da una persona o un gruppo & Interno \\
+	R2F12.4 & L'utente potrà, tramite Alexa, inviare messaggi ad una persona o un gruppo  & Interno \\
+%BLOCCO SLACK------------------------------------------------------------------------
+	R0F13 & L'utente potrà inserire all'interno del workflow un \BSlack{} & UC3.3.10 \\
+	R0F13.1 & L'utente potrà inserire le credenziali d'accesso a Slack & UC3.4.10 \\
+	R0F13.2 & L'utente potrà, tramite Alexa, leggere gli ultimi messaggi da un certo canale & Interno \\
+	R0F13.3 & L'applicazione permetterà all'utente di selezionare il canale da cui leggere i messaggi & Interno \\
+%BLOCCO CALENDARIO------------------------------------------------------------------
+	R0F14 & L'utente potrà inserire all'interno del workflow un \BCalendario{} & UC3.3.13 \\
+	R0F14.1 & L'utente potrà inserire le credenziali d'accesso a Google Calendar & UC3.4.13 \\
+	R0F14.2 & L'utente potrà, tramite Alexa, leggere gli eventi giornalieri & Interno \\
+	R0F14.3 & L'applicazione permetterà all'utente di inserire un evento all'interno di Google Calendar & Interno \\
+	R2F14.4 & L'applicazione permetterà all'utente di modificare tramite Alexa un evento all'interno di Google Calendar & Interno \\
+%BLOCCO YOUTUBE------------------------------------------------------------------
+	R0F15 & L'utente potrà inserire all'interno del workflow un \BYouTube{} & UC3.3.14 \\
+	R0F15.1 & L'utente potrà inserire le credenziali d'accesso a YouTube & UC3.4.14 \\
+	R0F15.2 & L'utente potrà, tramite Alexa, riprodurre gli ultimi video di un canale YouTube  & Interno \\
+	R0F15.3 & L'applicazione permetterà all'utente di modificare il link del canale YouTube & UC3.4.14 \\
+%BLOCCO YOUTUBE MUSIC-----------------------------------------------------------
+	R0F16 & L'utente potrà inserire all'interno del workflow un \BYouTubeMusic{} & UC3.3.15 \\
+	R0F16.1 & L'utente potrà inserire le credenziali d'accesso a YouTube Music & UC3.4.15 \\
+	R0F16.2 & L'utente potrà, tramite Alexa, riprodurre le ultime canzoni di una playlist YouTube Music  & Interno \\
+	R0F16.3 & L'applicazione permetterà all'utente di modificare il link della playlist, del canale o della canzone YouTube Music & Interno \\
+%BLOCCO RADIO-----------------------------------------------------------
+	R0F17 & L'utente potrà inserire all'interno del workflow un \BRadio{} & UC3.3.16 \\
+	R0F17.1 & L'utente potrà inserire l'indirizzo del sito di un canale radio  & Interno \\
+	R0F17.2 & L'applicazione permetterà all'utente di scegliere il canale radio preferito tra quelli disponibili & UC3.4.16 \\
+	R0F17.3 & L'utente potrà, tramite Alexa, ascoltare la radio & Interno \\
+%BLOCCO PROGRAMMAZIONE TV-----------------------------------------------------------
+	R0F18 & L'utente potrà inserire all'interno del workflow un \BTV & UC3.3.17 \\
+	R0F18.1 & L'utente potrà inserire l'indirizzo del Feed RSS di un canale televisivo  & Interno \\
+	R0F18.2 & L'applicazione permetterà all'utente di scegliere il canale televisivo preferito tra quelli disponibili & UC3.4.17 \\
+%BLOCCO SPOTIFY-----------------------------------------------------------
+	R0F19 & L'utente potrà inserire all'interno del workflow un \BSpotify{} & UC3.3.18 \\
+	R0F19.1 & L'utente potrà inserire le credenziali d'accesso a Spotify  & UC3.4.18 \\
+	R0F19.2 & L'utente potrà, tramite Alexa, riprodurre una certa canzone da Spotify & Interno \\
+	R0F19.3 & L'utente potrà, tramite Alexa, riprodurre una certa playlist da Spotify & Interno \\
+%BLOCCO CINEMA-----------------------------------------------------------
+	R0F20 & L'utente potrà inserire all'interno del workflow un \BCinema{} & UC3.3.19 \\
+	R0F20.1 & L'utente potrà inserire testualmente il nome del cinema più vicino  & Interno \\
+	R0F20.2 & L'applicazione permetterà all'utente di modificare il nome del cinema più vicino  & UC3.4.19 \\
+	R1F20.3 & L'applicazione permetterà all'utente di selezionare il cinema più vicino tra quelli disponibili tramite geolocalizzazione  & Interno \\
+	R0F20.4 & L'utente tramite Alexa deve sapere la programmazione odierna di un certo cinema & Interno \\
+	R2F20.5 & L'utente tramite Alexa deve sapere la programmazione al cinema ad una certa ora & Interno \\
+%BLOCCO TRASPORTI-----------------------------------------------------------
+	R0F21 & L'utente potrà inserire all'interno del workflow un \BTrasporti{} & UC3.3.20 \\
+	R0F21.1 & L'applicazione permetterà all'utente di selezionare la località di partenza  & Interno \\
+	R0F21.2 & L'applicazione permetterà all'utente di selezionare la località di arrivo  & Interno \\
+	R0F21.3 & L'applicazione permetterà all'utente di selezionare l'ora di partenza  & Interno \\
+	R0F21.4 & L'applicazione permetterà all'utente di modificare la località di partenza & UC3.4.20 \\
+	R0F21.5 & L'applicazione permetterà all'utente di modificare la località di arrivo & UC3.4.20 \\
+	R0F21.6 & L'utente tramite Alexa deve sapere qual è il prossimo treno disponibile & Interno \\
+%BLOCCO LISTA-----------------------------------------------------------
+	R0F21 & L'utente potrà inserire all'interno del workflow un \BLista{} & UC3.3.21 \\
+	R0F21.1 & L'utente potrà, tramite Alexa, aggiungere un elemento alla lista & UC3.4.21 \\
+	R0F21.2 & L'utente potrà, tramite Alexa, rimuovere un elemento dalla lista  & Interno \\
+	R0F21.3 & L'utente tramite Alexa deve sapere quali elementi sono rimasti nella lista & Interno \\
+	R0F22 & L'applicazione permetterà all'utente autenticato di effettuare il logout &  Interno\\ 	
+	
+\end{longtable}
+
+\end{center}
+
+\subsection{Requisiti di qualità}
+
+\begin{center}
+	\renewcommand{\arraystretch}{2.2}
+	\rowcolors{3}{tableRow}{}
+	
+	\begin{longtable}{ c m{8cm} c }
+		
+		\rowcolor[HTML]{232f3e}
+	
+		\rowcolors{3}{tableRow}{}
+		\color[HTML]{FFFFFF} \textbf{Id Requisito} & \color[HTML]{FFFFFF} \centering\textbf{Descrizione} & \color[HTML]{FFFFFF} \textbf{Fonte} \\
+	\endhead
+\rowcolor{white}\multicolumn{3}{c}
+   { Continua nella pagina successiva} \\
+   \endfoot
+   \caption [Requisiti di Qualità]{Requisiti di Qualità}
+	\label{tabella:reqP1}
+   \endlastfoot
+		R0Q1 & Verranno consegnati i diagrammi UML 2.0 relativi agli Use Cases di progetto  &  Capitolato \\
+		R0Q2 & Verrà consegnato il \glo{Voice Dialog Flow} &  Capitolato \\
+		R0Q3 & Verrà consegnato lo Schema Design relativo alla base di dati &  Capitolato \\
+		R0Q4 & Verrà consegnata la documentazione dettagliata di tutte le API & Capitolato \\
+		R0Q5 & Verrà consegnato il piano di test d'unità & Capitolato \\
+		R0Q6 & Verrà consegnato un documento di Bug Reporting & Capitolato \\
+		R0Q7 & Il codice prodotto verrà consegnato utilizzando sistemi di versionamento & Capitolato \\
+		R0Q8 & Tutte le norme descritte nel documento \docNameVersionNdP{} devono essere rispettate & Interno \\
+		R0Q9 & Tutti i documenti devono avere un \glo{indice di Gulpease} compreso tra 40 e 87 & Interno \\
+		R0Q10 & Tutti i vincoli e le metriche descritte nel documento \docNameVersionPdQ{} devono essere rispettate & Interno \\
+		
+	\end{longtable}
+	
+\end{center}
+
+\subsection{Requisiti di vincolo}
+
+\begin{center} 
+\sloppy
+\renewcommand{\arraystretch}{2.2}
+\rowcolors{3}{tableRow}{}
+
+\begin{longtable}{ c m{8cm} c }
+	
+	\rowcolor[HTML]{232f3e}
+
+	\rowcolors{3}{tableRow}{}
+	\color[HTML]{FFFFFF} \textbf{Id Requisito} & \color[HTML]{FFFFFF} \centering\textbf{Descrizione} & \color[HTML]{FFFFFF} \textbf{Fonte} \\
+\endhead
+\rowcolor{white}\multicolumn{3}{c}
+   { Continua nella pagina successiva} \\
+   \endfoot
+   \caption [Requisiti di Vincolo]{Requisiti di Vincolo}
+	\label{tabella:reqP1}
+   \endlastfoot
+	R0D1 & L'applicazione mobile deve essere sviluppata per sistema operativo Android  &  Capitolato \\ 
+	R0D2 & L'interfaccia mobile deve essere sviluppata utilizzando il linguaggio di programmazione \glo{Kotlin} versione 1.3  & Capitolato\\ 
+	R0D3 & Viene utilizzato \glo{Node.js} versione 10.15.3 LTS per lo sviluppo del backend dell'applicazione & Capitolato\\ 
+	R0D4 & Lo sviluppo dovrà utilizzare i servizi offerti da \glo{Amazon Web Services}  &  Capitolato \\ 
+	R0D4.1 & Verrà utilizzato \glo{DynamoDB} come \glo{database} NoSQL &  Capitolato \\
+	R0D4.2 & Verrà utilizzato \glo{Lambda} per l'esecuzione del codice &  Capitolato \\
+	R0D4.3 & Verranno utilizzate le \glo{API Gateway} come \glo{API REST} &  Capitolato \\
+	R0D5 & L'applicazione prodotta sarà compatibile con Android versione 6.0 e successive & Interno \\
+	R0D6 & Verrà utilizzato \glo{Amazon Lex} per creare interfacce di comunicazione tramite voce e testo & Interno \\
+
+\end{longtable}
+
+\end{center}

@@ -1,0 +1,586 @@
+\section{Voice Dialog Flow}
+Il Voice Dialog Flow presenta degli esempi di comunicazione fra l’utente e l’assistente vocale Amazon Alexa. 
+Durate le fasi successive di progettazione, le interazione possono essere soggette a cambiamenti o modifiche, in base alle richieste 
+del proponente e/o committente. Sì identifica nel seguente modo i componenti di ogni iterazione:
+
+\begin{itemize}
+    \item \alexa rappresenta Amazon Alexa;
+    \item \utente rappresenta l'utente che sta interagendo con Amazon Alexa;
+    \item \textbf{[risorsa]:} il dato che viene prelevato al difuori del sistema dell'assistente vocale Amazon Alexa.
+\end{itemize}
+\subsection{Comandi Intent}
+I comandi intent rappresentano un'azione che soddisfa la richiesta vocale dell'utente, questo per semplificare l'interazione e l'esecuzione
+della \glo{skill} e dei workflow.\\
+
+%------COMANDO STOP--------
+\subsubsection{Comando Stop}
+Comando che permette di fermare l'esecuzione di una skill oppure di un workflow.
+
+\paragraph{Italiano}
+\begin{itemize}
+        \item \voice{stop};
+        \item \voice{spegni};
+        \item \voice{ferma}.
+\end{itemize}
+
+\paragraph{Inglese}
+\begin{itemize}
+        \item \voice{stop};
+        \item \voice{turn off}.
+\end{itemize}
+%-----COMANDO SI ------
+\subsubsection{Comando Sì}
+Comando che permette di dare risposta affermativa alle domande poste da Amazon Alexa.
+
+\paragraph{Italiano}
+\begin{itemize}
+        \item \voice{sì};
+        \item \voice{perfetto};
+        \item \voice{va bene}.
+\end{itemize}
+
+\paragraph{Inglese}
+\begin{itemize}
+        \item \voice{yes};
+        \item \voice{all right};
+        \item \voice{perfect};
+        \item  \voice{of course}.
+\end{itemize}
+
+%-----COMANDO NO ------
+\subsubsection{Comando No}
+Comando che permette di dare risposta negativa alle domande poste da Amazon Alexa.
+
+\paragraph{Italiano}
+\begin{itemize}
+        \item \voice{no};
+        \item \voice{non va bene}.
+\end{itemize}
+
+\paragraph{Inglese}
+\begin{itemize}
+        \item \voice{no};
+        \item \voice{not good}.
+\end{itemize}
+
+
+% Comando prossimo ( NEXT )
+\subsubsection{Comando Next}
+Comando che ti permetti di passare da un blocco al successivo di un workflow in un qualsiasi momento.
+\paragraph{Italiano}
+\begin{itemize}
+        \item \voice{vai al prossimo};
+        \item \voice{successivo};
+        \item \voice{salta al prossimo};
+        \item \voice{avanti}.
+\end{itemize}
+
+\paragraph{Inglese}
+\begin{itemize}
+        \item \voice{next};
+        \item \voice{go ahead};
+        \item \voice{jump to the next}.
+\end{itemize}
+
+% ---- Dialogo in Italiano ----- 
+\subsection{Italiano}
+
+%selezione skill
+\subsubsection{Selezione Skill}
+
+\utente \voice{Apri MegaAlexa} $|$ \voice{Esegui MegaAlexa} $|$ \voice{Avvia MegaAlexa} $|$ \voice{Fai partire MegaAlexa}.\\
+\alexa  \voice{Benvenuto, ti trovi nella skill MegaAlexa. Come ti posso aiutare?} $|$ \voice{Con quale workflow partiamo?} $|$ \voice{Quale workflow desideri?}
+
+%selezione workflow
+\subsubsection{Selezione workflow}
+Una volta che sì entra nella skill, ci sono due possibilità:
+
+\begin{itemize}
+    \item \utente \voice{Quali workflow sono presenti?} $|$ \voice{Mi sono dimenticato, mi elenchi i workflow.} $|$ \voice{Quali workflow posso utilizzare?}.\\
+           \alexa  \voice{Sono presenti i seguenti workflow: [workflow]. Quali scegli?} $|$ \voice{Puoi scegliere tra i seguenti workflow: [workflow].}\\
+           \utente  \voice{Eegui [workflow]} $|$ \voice{Avvia [workflow]} $|$ \voice{Apri [workflow]} $|$ \textit{Fai partire [workflow]}.
+           %capire se eliminare il secondo utente
+    \item \utente \voice{Apri [workflow]} $|$ \voice{Eegui [workflow]} $|$ \voice{Avvia [workflow]} $|$ \voice{Fai partire [workflow]}.\\
+\end{itemize}
+
+
+%Esecuzione del workflow.
+\subsubsection{Esecuzione workflow}
+
+\myparagraph{Testo}
+\\
+\alexa \voice{[testo]}
+
+\myparagraph{Feed RSS}
+\\
+\alexa \voice{Gli aggiornamenti dei siti seguiti sono i seguenti: [feed rss]} $|$ 
+       \voice{Ecco gli aggiornamenti dei siti seguiti: [feed rss]}
+
+\myparagraph{Instagram}
+\begin{itemize}
+    \item Lettura delle notifiche:
+     \begin{itemize}
+        \item \alexa \voice{ Ecco le notifiche: [lettura notifiche]. Vuoi risentirle? } $|$ \voice{Queste sono le notifiche: [lettura notifiche]. Vuoi risentirle?}\\
+              \utente \voice{[Comando no]}.\\
+              \alexa \voice{Ok} 
+        \item \alexa \voice{ Ecco le notifiche: [lettura notifiche]. Vuoi risentirle? } $|$ \voice{Queste sono le notifiche: [lettura notifiche]. Vuoi risentirle?}\\
+                \utente \voice{[Comando sì]}.\\
+                \alexa \voice{Va bene}
+    \end{itemize}
+    \item Visualizzazione foto da hashtag:
+    \begin{itemize}
+        \item \alexa \voice{ Ecco le foto selezionate: [visualizzazione foto].} $|$ \voice{Queste sono le foto: [visualizzazione foto].}
+    \end{itemize}
+\end{itemize}
+Durante la configurazione del workflow, l'utente stabilisce, tramite il blocco di filtro, il numero di notifiche da leggere e per la visualizzazione delle foto
+seleziona l'hashtag desiderato.
+
+\myparagraph{Facebook}
+\begin{itemize}
+    \item Lettura delle notifiche:
+     \begin{itemize}
+        \item \alexa \voice{ Ecco le notifiche: [lettura notifiche].} $|$ \voice{Queste sono le notifiche ancora da leggere: [lettura notifiche].}\\
+              \utente \voice{Va bene} $|$ \voice{Grazie}.
+    \end{itemize}
+    \item Lettura dei post:
+    \begin{itemize}
+        \item \alexa \voice{Eccoti gli ultimi post: [lettura post].} $|$ \voice{Ci siamo! ecco i posti i post: [lettura post].}\\
+                \utente \voice{Va bene} $|$ \voice{Grazie}.  
+    \end{itemize}
+\end{itemize}
+
+%LinkedIn
+\myparagraph{LinkedIn}
+\begin{itemize}
+    \item Lettura delle notifiche:
+     \begin{itemize}
+        \item \alexa \voice{ Ecco le notifiche: [lettura notifiche].} $|$ \voice{Queste sono le notifiche ancora da leggere: [lettura notifiche].}\\
+              \utente \voice{Va bene} $|$ \voice{Grazie}.
+    \end{itemize}
+    \item Lettura messaggi:
+    \begin{itemize}
+        \item Non ci sono messaggi:
+        \begin{itemize}
+            \item \alexa \voice{Mi dispiace, non ci sono messaggi da leggere.} $|$ \voice{Non hai messaggi da leggere.}
+        \end{itemize}
+        \item Ci sono messaggi:
+        \begin{itemize}
+            \item \alexa \voice{ Hai [n] messaggi da leggere, [lettura messaggi]. Leggo le sequenti?} $|$ \voice{Ci sono [n] messaggi da leggere, [lettura messaggi].}\\
+            \utente \voice{Va bene} $|$ \voice{Grazie}.
+     \item  \alexa \voice{ Hai [n] messaggi da leggere, [lettura messaggi].} $|$ \voice{ Ci sono [n] messaggi da leggere, [lettura messaggi].}\\
+            \utente \voice{Va bene} $|$ \voice{Grazie}.
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+%Telegram
+
+\myparagraph{Telegram}
+\begin{itemize}
+    \item Non ci sono messaggi da leggere:
+    \begin{itemize}
+        \item \alexa \voice{Relax! non hai messaggi non letti.}$|$ \voice{Non ci sono messaggi da leggere.}
+    \end{itemize}
+    \item Ci sono messaggi da leggere:
+    \begin{itemize}
+        \item \alexa \voice{ Hai [n] messaggi da leggere, [lettura messaggi].}$|$ \voice{ Ci sono [n] messaggi da leggere, [lettura messaggi].}\\
+                \utente \voice{Va bene} $|$ \voice{Grazie}.
+    \end{itemize}
+    
+\end{itemize}
+
+
+%Slack
+\myparagraph{Slack}
+\begin{itemize}
+    \item Non ci sono messaggi da leggere:
+    \begin{itemize}
+        \item \alexa \voice{Relax! non hai messaggi non letti.}$|$ \voice{Non ci sono messaggi da leggere.}
+    \end{itemize}
+    \item Ci sono messaggi da leggere:
+    \begin{itemize}
+        \item \alexa \voice{ Hai [n] messaggi da leggere, [lettura messaggi].}$|$ \voice{ Ci sono [n] messaggi da leggere, [lettura messaggi].}\\
+                \utente \voice{Va bene} $|$ \voice{Grazie}.
+    \end{itemize}
+    
+\end{itemize}
+
+
+%Messanger
+\myparagraph{Messanger}
+\begin{itemize}
+    \item Non ci sono messaggi da leggere:
+    \begin{itemize}
+        \item \alexa \voice{Relax! non hai messaggi non letti.}$|$ \voice{Non ci sono messaggi da leggere.}
+    \end{itemize}
+    \item Ci sono messaggi da leggere:
+    \begin{itemize}
+        \item \alexa \voice{ Hai [n] messaggi da leggere, [lettura messaggi].}$|$ \voice{ Ci sono [n] messaggi da leggere, [lettura messaggi].}\\
+                \utente \voice{Va bene} $|$ \voice{Grazie}.
+    \end{itemize}
+    
+\end{itemize}
+
+
+\myparagraph{Meteo}
+\\
+\alexa \voice{ A [località scelta] ci sono [gradi]} $|$ \voice{ In questo momento ci sono [gradi] a [località scelta]}
+
+\myparagraph{Mail}
+\begin{itemize}
+    \item Ci sono email da leggere:
+    \begin{itemize}
+        \item \alexa \voice{ Hai [n] email da leggere, [emails]. Leggo le sequenti?} $|$ \voice{ Ci sono [n] email da leggere, [emails]. Leggo le restanti?}\\
+               \utente \voice{[Comando sì]}
+        \item \alexa \voice{ Hai [n] email da leggere, [emails]. Leggo le sequenti?} $|$ \voice{ Ci sono [n] email da leggere, [emails]. Leggo le restanti?}\\
+                \utente \voice{[Comando no]}
+    \end{itemize}
+    \item Non ci sono email da leggere:
+    \begin{itemize}
+        \item \alexa \voice{Non ci sono email da leggere.} $|$ \voice{Non hai email da leggere.}
+    \end{itemize}
+\end{itemize}
+Il numero di email che verranno lette dall’assistente vocale Alexa, dipenderà dal blocco filtro impostato dall'utente. 
+Qualora non sarà presente nessun filtro , Alexa leggerà tutte le nuove mail presenti.
+
+\myparagraph{Calendario}
+\begin{itemize}
+    \item Lettura eventi:
+    \begin{itemize}
+        \item L'utente non ha nessun evento in programma:
+        \\\alexa \voice{Non ci sono eventi registrati per oggi} | \voice{Relax, non ci sono eventi oggi}
+        \\ \utente \voice{Ok} $|$ \voice{Grazie} $|$ \voice{Perfetto}
+        \item L'utente ha eventi:
+        \\ \alexa \voice{Oggi hai i seguenti eventi: [eventi]} $|$ \voice{Oggi sei impegnato coi sequenti eventi: [eventi]}
+        \\ \utente \voice{Ok} $|$ \voice{Perfetto} $|$ \voice{Grazie}
+    \end{itemize}
+    \item Scrittura eventi:
+     \\\alexa \voice{Che nome vuoi dare all'evento?}
+            \\ \utente \voice{[nome evento]}
+            \\ \alexa \voice{Qual è il giorno?} $|$ \voice{In quale giorno sì avverrà?}
+            \\ \utente \voice{[giorno evento]}
+            \\ \alexa \voice{A che ora?}  $|$ \voice{A che ora sì terrà?}
+            \\ \utente \voice{[ora evento]}
+\end{itemize}
+
+
+%Youtube 
+\myparagraph{YouTube}
+\begin{itemize}
+    \item Non ci sono nuovi video:
+    \begin{itemize}
+        \item \alexa \voice{Non sono presenti nuovi video nel canale prescelto.}
+    \end{itemize}
+    \item Ci sono nuovi video nel canale:
+    \begin{itemize}
+        \item \alexa \voice{Questo è l'ultimo video caricato nel canale prescelto [link video].}$|$ \alexa \voice{Ultimo video caricato del canale prescelto [link video].}
+        \utente \voice{Va bene} $|$ \voice{Grazie}.
+    \end{itemize}
+\end{itemize}
+
+\myparagraph{YouTube Music}
+\\
+\alexa \voice{Eccoti la tua playlist, buon ascolto [playlist].} $|$ \voice{Buon ascolto [playlist].}
+
+\myparagraph{Spotify}
+\\
+\alexa \voice{Ecco la musica scelta per te [playlist].} $|$ \voice{Relassati e buon ascolto [playlist].}
+
+
+\myparagraph{Radio}
+\\
+\alexa \voice{Ci siamo , ecco la tua radio preferita, buon ascolto: [radio]}
+
+\myparagraph{Programmazione TV}
+\\
+\alexa \voice{I programmi televisivi di oggi sono: [programmi TV]}$|$ \voice{Questi sono i programmi di oggi: [programmi TV].}
+
+\myparagraph{Cinema}
+\\
+\alexa \voice{Oggi al cinema ci sono le seguenti proiezioni : [film]}$|$ \voice{Questi sono i fiml in proiezione oggi: [film].}
+%TRASPORTI
+\myparagraph{Trasporti}
+\\
+\alexa \voice{Gli orari del [trasporto] sono i seguenti: [orari]}
+\\ \\
+L'utente durante la configurazione del blocco Trasporti, stabilisce la partenza e l'arrivo.
+%SICUREZZA
+\myparagraph{Sicurezza}
+\\ \\
+\alexa \voice{Qual è il tuo codice di sicurezza?}$|$ \voice{Dimmi il tuo codice di sicurezza}$|$ \voice{Qual è il tuo codice?}\\
+\utente \voice{[codice di sicurezza]}.\\
+L'operazione va avanti finché l'utente non dirà il codice di sicurezza corretto. Una volta detto corretto, sì procede col workflow.
+
+%LISTA 
+\myparagraph{Lista}
+\begin{itemize}
+    \item La lista è vuota:
+    \begin{itemize}
+        \item Aggiunta di un elemento alla lista:\\
+        \alexa\voice{Che elemento vuoi aggiungere alla lista?} $|$ \voice{La lista è vuota, che elemento vuoi aggiungere?}\\
+        \utente \voice{Vorrei aggiungere [elemento] alla lista} $|$ \voice{Voglio aggiungere [elemento] alla lista} $|$
+        \voice{Aggiungi [elemento] alla lista.}\\
+        \alexa \voice{Aggiunto, vuoi aggiungere altro? } $|$ \voice{Elemento aggiunto con successo, vuoi aggiungere altro?} $|$ \voice{Fatto, desideri aggiungere altro?}\\
+        \utente \voice{[comando no]}
+    \end{itemize}
+    \item La lista non è vuota:
+    \begin{itemize}
+        \item Aggiunta di un elemento alla lista:
+        \\ \alexa\voice{Sono presenti questi elementi nella lista: [elementi]. Cosa vuoi aggiungere?}$|$ \voice{Gli elementi presenti nella lista in questo momento sono: [elementi]. Cosa vuoi aggiungere?}\\
+        \utente \voice{Vorrei aggiungere [elemento] alla lista} $|$ \voice{Voglio aggiungere [elemento] alla lista} $|$
+        \voice{Aggiungi [elemento] alla lista.}\\
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Conclusione workflow}
+\alexa \voice{La creazione del workflow è andata a buon fine.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{English}
+
+%selezione skill
+\subsubsection{Skill selection}
+
+\utente \voice{Open MegaAlexa} $|$ \voice{Execute MegaAlexa} $|$ \voice{Start MegaAlexa} $|$ \voice{Switch on MegaAlexa}\\
+\alexa  \voice{Welcome, you are using the MegaAlexa skill. How can I help you?} $|$ \voice{What workflow do we start with?} $|$ \voice{Which workflow do you want?}
+
+%selezione workflow
+\subsubsection{Workflow selection}
+Once you get into the skill, there are two possibilities:
+
+\begin{itemize}
+    \item \utente \voice{Which workflows are available?} $|$ \voice{I forgot, please repeat the workflows?} $|$ \voice{Which workflows can I use?}.\\
+           \alexa  \voice{ The workflows available are as follow: [workflow]. Which one do you choose?} $|$ \voice{You can choose the following workflows: [workflow].}\\
+           \utente  \voice{Execute [workflow]} $|$ \voice{Start [workflow]} $|$ \voice{Open [workflow]}.
+           %capire se eliminare il secondo utente
+    \item \utente \voice{Open [workflow]} $|$ \voice{Execute [workflow]} $|$ \voice{Start [workflow]}.\\
+\end{itemize}
+
+
+%Esecuzione del workflow.
+\subsubsection{Workflow execution}
+
+\myparagraph{Text}
+\\
+\alexa \voice{[text]}
+
+\myparagraph{Feed RSS}
+\\
+\alexa \voice{The updates of the followed sites are: [feed rss]} $|$ 
+       \voice{Here you have the updates of the followed sites: [feed rss]}
+
+\myparagraph{Instagram}
+\begin{itemize}
+    \item Reading notifications:
+     \begin{itemize}
+        \item \alexa \voice{ Here's the notifications: [reading notifications]. Do you want to hear them again? } $|$ \voice{These are notifications: [reading notifications]. Do you want to hear them again?}\\
+              \utente \voice{[No command]}.\\
+              \alexa \voice{Ok} 
+        \item \alexa \voice{ Here's the notifications: [reading notifications]. Do I have to repeat them? } $|$ \voice{These are notifications: [reading notifications]. Do I have to repeat them?}\\
+                \utente \voice{[Yes command]}.\\
+                \alexa \voice{Ok}
+    \end{itemize}
+    \item Viewing photos from hashtags:
+    \begin{itemize}
+        \item \alexa \voice{ Here you have the selected pictures: [display photos].} $|$ \voice{These are the pictures: [display pictures].}
+    \end{itemize}
+\end{itemize}
+During the configuration of the workflow, by using the filter block, the user sets how many notifications to read and visualise.
+
+\myparagraph{Facebook}
+\begin{itemize}
+    \item Reading notifications:
+     \begin{itemize}
+        \item \alexa \voice{ Here are the notifications: [reading notifications].} $|$ \voice{These are the notifications you haven’t read yet: [reading notifications].}\\
+              \utente \voice{Ok} $|$ \voice{Thank you}.
+    \end{itemize}
+    \item Reading posts:
+    \begin{itemize}
+        \item \alexa \voice{Here are the latest posts: [reading posts].} $|$ \voice{Here we are! here are the posts: [reading posts].}\\
+                \utente \voice{Ok} $|$ \voice{Thank you}.  
+    \end{itemize}
+\end{itemize}
+
+%LinkedIn
+\myparagraph{LinkedIn}
+\begin{itemize}
+    \item Reading notifications:
+     \begin{itemize}
+        \item \alexa \voice{ Here's the notifications: [reading notifications].} $|$ \voice{These are the notifications yet to be read: [reading notifications].}\\
+              \utente \voice{Ok} $|$ \voice{Thank you}.
+    \end{itemize}
+    \item Reading messages:
+    \begin{itemize}
+        \item There are no messages:
+        \begin{itemize}
+            \item \alexa \voice{I'm sorry, there are no messages to read.} $|$ \voice{There are no messages to read.}
+        \end{itemize}
+        \item There are messages:
+        \begin{itemize}
+            \item \alexa \voice{  You have [n] new messages, [reading messages]. Sould I read the rest of them?} $|$ \voice{There are [n] messages to read, [reading messages].}\\
+            \utente \voice{Ok} $|$ \voice{Thank you}.
+     \item  \alexa \voice{ You have [n] messages to read, [reading messages].} $|$ \voice{ There are [n] messages to read, [reading messages].}\\
+            \utente \voice{Ok} $|$ \voice{Thank you}.
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+%Telegram
+
+\myparagraph{Telegram}
+\begin{itemize}
+    \item There are no messages to read:
+    \begin{itemize}
+        \item \alexa \voice{Relax! there are no new messages.}$|$ \voice{There are no messages to read.}
+    \end{itemize}
+    \item There are messages to read:
+    \begin{itemize}
+        \item \alexa \voice{ You have [n] messages to read, [reading messages].}$|$ \voice{ There are [n] messages to read, [reading messages].}\\
+                \utente \voice{Ok} $|$ \voice{Thank you}.
+    \end{itemize}
+    
+\end{itemize}
+
+
+%Slack
+\myparagraph{Slack}
+\begin{itemize}
+    \item There are no messages to read:
+    \begin{itemize}
+        \item \alexa \voice{Relax! there are no new messages.}$|$ \voice{There are no messages to read.}
+    \end{itemize}
+    \item There are messages to read:
+    \begin{itemize}
+        \item \alexa \voice{ You have [n] messages to read, [reading messages].}$|$ \voice{ There are [n] messages to read, [reading messages].}\\
+                \utente \voice{Ok} $|$ \voice{Thank you}.
+    \end{itemize}
+    
+\end{itemize}
+
+
+%Messanger
+\myparagraph{Messanger}
+\begin{itemize}
+    \item There are no messages to read:
+    \begin{itemize}
+        \item \alexa \voice{Relax! there are no new messages.}$|$ \voice{There are no messages to read.}
+    \end{itemize}
+    \item There are messages to read:
+    \begin{itemize}
+        \item \alexa \voice{ You have [n] messages to read, [reading messages].}$|$ \voice{ There are [n] messages to read, [reading messages].}\\
+                \utente \voice{Ok} $|$ \voice{Thank you}.
+    \end{itemize}
+    
+\end{itemize}
+
+
+\myparagraph{Weather}
+\\
+\alexa \voice{ In [chosen location] there are [degree]} $|$ \voice{ In this moment there are [degree] in [chosen location]}
+
+\myparagraph{Mail}
+\begin{itemize}
+    \item There are emails to read:
+    \begin{itemize}
+        \item \alexa \voice{ You have [n] emails to read, [emails]. Do I have to read them} $|$ \voice{ There are [n] emails to read, [emails]. Do I read the rest?}\\
+               \utente \voice{[Yes command]}
+        \item \alexa \voice{ You have [n] emails to read, [emails]. Do I have to read them?} $|$ \voice{ There are [n] emails to read, [emails]. Do I read the rest?}\\
+                \utente \voice{[No command]}
+    \end{itemize}
+    \item There are no emails to read:
+    \begin{itemize}
+        \item \alexa \voice{There are emails to read.} $|$ \voice{There are no emails to read.}
+    \end{itemize}
+\end{itemize}
+The number of emails that alexa will read, depends on the filter block imposted by the user. If no filter are imposted, alexa will read all the emails.
+
+\myparagraph{Calendar}
+\begin{itemize}
+    \item Reading events:
+    \begin{itemize}
+        \item The user does not have any scheduled events:
+        \\\alexa \voice{There are no events today} | \voice{Relax, there are no events today}
+        \\ \utente \voice{Ok} $|$ \voice{Thank you} $|$ \voice{Perfect}
+        \item The user has events:
+        \\ \alexa \voice{Today you have the following lineup: [events]} $|$ \voice{Today you're busy with the following events: [events]}
+        \\ \utente \voice{Ok} $|$ \voice{Perfect} $|$ \voice{Thank you}
+    \end{itemize}
+    \item Writing events:
+     \\\alexa \voice{What is the name of the event?}
+            \\ \utente \voice{[event name]}
+            \\ \alexa \voice{Which day?} $|$ \voice{On which day will it happen?}
+            \\ \utente \voice{[event day]}
+            \\ \alexa \voice{At which time?}  $|$ \voice{Which time will it be held??}
+            \\ \utente \voice{[event time]}
+\end{itemize}
+
+%Youtube 
+\myparagraph{YouTube}
+\begin{itemize}
+    \item There are no new videos:
+    \begin{itemize}
+        \item \alexa \voice{There are no new videos in the chosen channel.}
+    \end{itemize}
+    \item There are new videos in the channel:
+    \begin{itemize}
+        \item \alexa \voice{This is the last video uploaded in the chosen channel [link video].}$|$ \alexa \voice{Last video uploaded of the chosen channel [link video].}
+        \utente \voice{Ok} $|$ \voice{Thank you}.
+    \end{itemize}
+\end{itemize}
+
+\myparagraph{YouTube Music}
+\\
+\alexa \voice{Here's the playlist, enjoy [playlist].} $|$ \voice{Enjoy [playlist].}
+
+\myparagraph{Spotify}
+\\
+\alexa \voice{Here's the music chosen for you [playlist].} $|$ \voice{Relax and enjoy [playlist].}
+
+
+\myparagraph{Radio}
+\\
+\alexa \voice{Here we go, here's your favorite radio, enjoy: [radio]}
+
+\myparagraph{TV Programming}
+\\
+\alexa \voice{TV programs of today are: [TV programs]}$|$ \voice{These are the programs of today: [TV programs].}
+
+\myparagraph{Movie theater}
+\\
+\alexa \voice{ These are the movies on today: [movies]}$|$ \voice{There are the movies in the theater today: [movies].}
+%TRASPORTI
+\myparagraph{Trasportation}
+\\
+\alexa \voice{The timetables of the [trasportation] are the following: []}
+\\ \\
+During the configuration of the transportation block , the user sets the starting location and the destination.
+%SICUREZZA
+\myparagraph{Security}
+\\ \\
+\alexa \voice{What is your security code?}$|$ \voice{Tell me your security code}$|$ \voice{What is your code?}\\
+\utente \voice{[security code]}.\\
+The operation continues until the user pronounces the correct password. Once pronounced, the workflow can initiate.
+%LISTA 
+\myparagraph{List}
+\begin{itemize}
+    \item The list is empty:
+    \begin{itemize}
+        \item Adding an item to the list:\\
+        \alexa\voice{What item do you want to add to the list?} $|$ \voice{The list is empty, what item do you want to add?}\\
+        \utente \voice{I would like to add [item] to the list} $|$ \voice{I want to add [item] to the list} $|$
+        \voice{Add [item] to the list.}\\
+        \alexa \voice{The item has been successfully added. Do you want to add anything alse? } $|$ \voice{Done. Do you want to add anything else?} $|$ \voice{Done, would you like to add more?}\\
+        \utente \voice{[No command]}
+    \end{itemize}
+    \item The list is not empty:
+    \begin{itemize}
+        \item Adding an item to the list:
+        \\ \alexa\voice{These items are on the list: [items]. What do you want to add?}$|$ \voice{At the moment the items on the list are the following: [items]. Do you want to add more?}\\
+        \utente \voice{I would like to add [item] to the list} $|$ \voice{I want to add [item] to the list} $|$
+        \voice{Add [item] to the list.}\\
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Workflow ending}
+\alexa \voice{Workflow creation was successful.}

@@ -1,0 +1,211 @@
+\section{Qualità di prodotto}
+Per garantire una buona qualità di prodotto, il gruppo ha individuato dallo standard 
+\glo{ISO/IEC 9126} le caratteristiche di qualità necessarie affinché il prodotto finale sia di buona qualità. 
+Inoltre il gruppo ha assegnato ad ogni sotto-caratteristica un grado di importanza (basso, medio alto), 
+al fine di valutare al meglio il prodotto finale. Tali valori sono riportati in tabella.
+
+\begin{center}
+  \renewcommand{\arraystretch}{2}
+   \begin{longtable}{m{3cm} m{6cm} m{3cm}}
+
+       \rowcolor[HTML]{232f3e}
+
+ \color[HTML]{FFFFFF}\textbf{Caratteristica} & \color[HTML]{FFFFFF}\textbf{Attributi} & \color[HTML]{FFFFFF}\textbf{Importanza} \
+
+\endhead
+     \rowcolor{white}\multicolumn{3}{c}
+ { Continua nella pagina successiva} \\
+ \endfoot
+
+ \caption [Caratteristiche e valori per la qualità]{Caratteristiche e valori per la qualità}
+   \label{tabella:qualProd}
+ \endlastfoot
+
+Funzionalità & Completezza & Alta\\
+ & Accuratezza  & Alta\\
+  & Interoperabilità & Alta\\
+  & Sicurezza & Media\\
+\rowcolor{tableRow}Affidabilità & Tolleranza ai guasti & Alta\\
+Usabilità & Comprensibilità & Alta\\
+ & Apprendibilità & Media\\
+\rowcolor{tableRow}Efficienza & Comportamento rispetto al tempo & Alta\\
+ Manutenibilità & Modificabilità & Media\\
+               & Stabilità & Alta\\
+                & Testabilità & Media\\
+
+
+   \end{longtable}
+
+\end{center}
+
+    \subsection{Qualità dei documenti}
+    Tutti i documenti prodotti del gruppo Hexadec devono essere leggibili, comprensibili e corretti dal punto di vista ortografico, sintattico, logico e semantico. Verranno utilizzate le seguenti metriche %definite nelle Norme di progetto in sezione
+    \begin{itemize}
+        \item Indice di Gulpease;
+        \item Errori ortografici.
+    \end{itemize}
+    
+    \subsection{Qualità del software}
+        \subsubsection{Funzionalità}
+        Rappresenta la capacità del software di soddisfare tutte le funzionalità che sono state individuate attraverso l’ \docNameVersionAdR{}.
+        \paragraph{Obiettivi di Qualità}
+        \begin{itemize}
+            \item \textbf{Completezza}: le funzionalità sviluppate devono coprire tutte quelle richieste dal committente e quelle individuate dal gruppo;
+            \item \textbf{Accuratezza}: il prodotto deve produrre i risultati attesi e con un buon grado di precisione;
+            \item \textbf{Interoperabilità}: la capacità del prodotto di interagire con gli altri sistemi definiti è essenziale per la riuscita del progetto.
+        \end{itemize}
+        Verranno utilizzate le seguenti metriche:
+        
+        \begin{center}
+            \renewcommand{\arraystretch}{2.2}
+            \rowcolors{3}{tableRow}{}
+            
+            \begin{longtable}{c c c c}
+              
+              \rowcolor[HTML]{232f3e}
+            
+              \rowcolors{1}{tableRow}{}
+              \color[HTML]{FFFFFF} \textbf{Metriche} & \color[HTML]{FFFFFF} \centering\textbf{Range di accettazione} & \color[HTML]{FFFFFF} \centering\textbf{Range di ottimalità} & \color[HTML]{FFFFFF} \centering\textbf{Unità di misura} 
+            \endhead
+            \rowcolor{white}\multicolumn{1}{c}
+               { Continua nella pagina successiva} \\
+               \endfoot
+               \caption [Range delle metriche riguardanti le funzionalità del prodotto]{Range delle metriche riguardanti le funzionalità del prodotto}
+              \label{tabella:reqP1}
+               \endlastfoot
+               %sv
+               Copertura dei requisiti obbligatori & 100 & 100 & Percentuale \\
+               Copertura dei requisiti desiderabili & [60,100] & [80,100] & Percentuale  \\
+
+            \end{longtable}
+
+        \end{center}
+
+        \subsubsection{Affidabilità}
+        Rappresenta la capacità del prodotto software di svolgere correttamente le sue funzioni durante il suo utilizzo, anche in caso in cui si presentino situazioni anomale.
+        \paragraph{Obiettivi di Qualità}
+        \begin{itemize}
+            \item \textbf{Tolleranza ai guasti}:  è necessario gestire al meglio eventuali malfunzionamenti o utilizzi scorretti dell'applicativo.
+        \end{itemize}
+        Verranno utilizzate le seguenti metriche:
+        \begin{center}
+            \renewcommand{\arraystretch}{2.2}
+            \rowcolors{3}{tableRow}{}
+            
+            \begin{longtable}{c c c c }
+              
+              \rowcolor[HTML]{232f3e}
+            
+              \rowcolors{1}{tableRow}{}
+              \color[HTML]{FFFFFF} \textbf{Metriche} & \color[HTML]{FFFFFF} \centering\textbf{Obiettivo} & \color[HTML]{FFFFFF} \centering\textbf{Range di ottimalità} & \color[HTML]{FFFFFF} \centering\textbf{Unità di misura} 
+            \endhead
+            \rowcolor{white}\multicolumn{1}{c}
+               { Continua nella pagina successiva} \\
+               \endfoot
+               \caption [Range delle metriche riguardanti l'affidabilità del prodotto]{Range delle metriche riguardanti l'affidabilità del prodotto}
+              \label{tabella:reqP1}
+               \endlastfoot
+               %sv
+               Tolleranza ai guasti & [0,10] & 0 & Percentuale \\
+
+            \end{longtable}
+
+        \end{center}
+       
+        \subsubsection{Usabilità}
+        Rappresenta la capacità del prodotto di essere comprensibile e facile da utilizzare 
+        da ogni utente.
+        \paragraph{Obiettivi di Qualità}
+        \begin{itemize}
+            \item \textbf{Comprensibilità}: il prodotto deve essere di facile comprensione in aderenza all'utilizzo che un utente intende farne;
+            \item \textbf{Apprendibilità}: dovrà essere disponibile un help on-line che aiuti l'utente a comprendere le funzionalità dell’applicativo.
+        \end{itemize}
+        Verranno utilizzate le seguenti metriche:
+        \begin{center}
+            \renewcommand{\arraystretch}{2.2}
+            \rowcolors{3}{tableRow}{}
+            
+            \begin{longtable}{c c c c }
+              
+              \rowcolor[HTML]{232f3e}
+            
+              \rowcolors{1}{tableRow}{}
+              \color[HTML]{FFFFFF} \textbf{Metriche} & \color[HTML]{FFFFFF} \centering\textbf{Obiettivo} & \color[HTML]{FFFFFF} \centering\textbf{Range di ottimalità} & \color[HTML]{FFFFFF} \centering\textbf{Unità di misura} 
+            \endhead
+            \rowcolor{white}\multicolumn{1}{c}
+               { Continua nella pagina successiva} \\
+               \endfoot
+               \caption [Range delle metriche riguardanti l'usabilità del prodotto]{Range delle metriche riguardanti l'usabilità del prodotto}
+              \label{tabella:reqP1}
+               \endlastfoot
+               %sv
+               Comprensibilità delle funzionalità offerte & [70-100] & [90,100] & Percentuale \\
+
+            \end{longtable}
+
+        \end{center}
+       
+        \subsubsection{Efficienza}
+        Rappresenta la capacità di eseguire le funzionalità offerte dal prodotto nel minor tempo possibile e utilizzando al tempo stesso il minor numero di risorse disponibili.
+        \paragraph{Obiettivi di Qualità}
+        \begin{itemize}
+            \item \textbf{Comportamento rispetto al tempo}: il prodotto dovrà necessariamente avere un tempo di risposta minore o uguale a quello richiesto dal committente.
+        \end{itemize}
+        Verranno utilizzate le seguenti metriche:
+        \begin{center}
+            \renewcommand{\arraystretch}{2.2}
+            \rowcolors{1}{tableRow}{}
+            
+            \begin{longtable}{c c c c }
+              
+              \rowcolor[HTML]{232f3e}
+            
+              \rowcolors{1}{tableRow}{}
+              \color[HTML]{FFFFFF} \textbf{Metriche} & \color[HTML]{FFFFFF} \centering\textbf{Obiettivo} & \color[HTML]{FFFFFF} \centering\textbf{Range di ottimalità} & \color[HTML]{FFFFFF} \centering\textbf{Unità di misura} 
+            \endhead
+            \rowcolor{white}\multicolumn{1}{c}
+               { Continua nella pagina successiva} \\
+               \endfoot
+               \caption [Range delle metriche riguardanti l'efficienza del prodotto]{Range delle metriche riguardanti l'efficienza del prodotto}
+              \label{tabella:reqP1}
+               \endlastfoot
+
+               Tempo di risposta & $\leq$ 90 & [0,15] & Secondi \\
+
+            \end{longtable}
+
+        \end{center}
+       
+        \subsubsection{Manutenibilità}
+        Rappresenta il livello di impegno richiesto per modificare il prodotto, attraverso correzioni o miglioramenti nei requisiti e nelle specifiche funzionali.
+        \paragraph{Obiettivi di Qualità}
+        \begin{itemize}
+            \item \textbf{Modificabilità}: il prodotto originale deve permettere eventuali modifiche in alcune sue parti;
+            \item \textbf{Stabilità}: si deve garantire che non insorgano errori in seguito a modifiche effettuate sul software;
+            \item \textbf{Testabilità}: il software deve poter essere facilmente testato per validare le modifiche effettuate.
+        \end{itemize}
+        Verranno utilizzate le seguenti metriche:
+        \begin{center}
+            \renewcommand{\arraystretch}{2.2}
+            \rowcolors{1}{tableRow}{}
+            
+            \begin{longtable}{c c c c }
+              
+              \rowcolor[HTML]{232f3e}
+            
+              \rowcolors{1}{tableRow}{}
+              \color[HTML]{FFFFFF} \textbf{Metriche} & \color[HTML]{FFFFFF} \centering\textbf{Obiettivo} & \color[HTML]{FFFFFF} \centering\textbf{Range di ottimalità} & \color[HTML]{FFFFFF} \centering\textbf{Unità di misura} 
+            \endhead
+            \rowcolor{white}\multicolumn{1}{c}
+               { Continua nella pagina successiva} \\
+               \endfoot
+               \caption [Range delle metriche riguardanti la manutenibilità del prodotto]{Range delle metriche riguardanti la manutenibilità del prodotto}
+              \label{tabella:reqP1}
+               \endlastfoot
+
+               Capacità analisi failure &  [60,100] & [80,100] & Percentuale \\
+				 Impatto delle modifiche & [0,20] & [0,10] & Percentuale \\
+            \end{longtable}
+
+        \end{center}
+       \pagebreak

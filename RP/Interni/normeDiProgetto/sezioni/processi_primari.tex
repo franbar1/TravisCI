@@ -1,0 +1,337 @@
+\justify \section{Processi Primari}
+
+\subsection{Fornitura}
+Il gruppo \groupName{} intende mantenere un costante dialogo con l'azienda \proposerName{} in modo da poter contare
+di riscontri a beneficio di un lavoro svolto il meglio possibile.
+
+\subsubsection{Scopo}
+Lo scopo di questo \glo{processo} è descrivere le norme che il gruppo dovrà rispettare per preparare la proposta per 
+guadagnare la possibilità di lavorare sul progetto offerto dall'azienda \proposerName{}.  Il processo inoltre
+dovrà determinare procedure e risorse necessarie a gestire il progetto.
+
+\subsubsection{Studio di Fattibilità} 
+L'obiettivo dello \docNameSdF{} è analizzare ogni \glo{capitolato} proposto in modo
+da poter scegliere quello per cui preparare la proposta di lavoro. Questa sezione serve per 
+individuare rischi, costi e benefici di ogni progetto in modo da effettuare una scelta consapevole e matura del 
+progetto per cui candidarsi. \\
+L'analisi dei capitolati culmina con la stesura di un documento,
+lo \docNameVersionSdF{}, nel quale vengono indicati i motivi per cui è stato selezionato un 
+progetto a discapito di altri. Per il capitolato scelto l'analisi è stata arricchita da un primo
+incontro con l'azienda \proposerName{} avvenuto il 22-03-2019 tramite conference call utilizzando Google Hangouts il cui resoconto si trova
+nel verbale VER-E-22-03-2019. \\
+La struttura dell' analisi è la stessa per ogni capitolato e si sviluppa nel seguente modo:
+\begin{itemize} 
+    \item \textbf{Informazioni generali}: elenco che indica il nome del progetto, l'azienda proponente e infine il committente;
+    \item \textbf{Descrizione del capitolo}: breve introduzione di quello che deve essere il prodotto finale;
+    \item \textbf{Finalità di progetto}: descrizione di ciò che è richiesto dal capitolato e delle modalità;
+    \item \textbf{Tecnologie interessate}: elenco delle tecnologie consigliate o esplicitamente richieste per lo sviluppo del progetto;
+    \item \textbf{Conclusioni}: valutazioni riguardo al capitolato e spiegazione dei motivi che hanno portato alla scelta o meno di esso.
+\end{itemize}
+Il primo capitolato che viene analizzato è quello scelto. L'analisi degli altri viene invece riportata
+in ordine di capitolato (prima C1,C2,C3,...).
+
+\subsubsection{Pianificazione}
+Con la pianificazione il gruppo intende scegliere un modello di \glo{ciclo di vita} del software
+in linea con l'ambito e la complessità del progetto. Processi, attività e task devono attenersi al modello
+di ciclo di vita selezionato. Inoltre vanno stabiliti i requisiti per la gestione del progetto, stilando
+il documento \docNameVersionPdP{} e per garantire la qualità del prodotto stilando il documento
+\docNameVersionPdQ{}.
+
+\subsubsection{Piano di Progetto}
+L'obiettivo del Piano di Progetto è pianificare le attività del progetto. Quindi deve contenere quali 
+risorse sono disponibili e come assegnarle a quali attività. Queste ultime devono essere distribuite in diversi
+periodi. L'organizzazione descritta nel Piano di Progetto deve essere efficiente in modo da garantire un
+prodotto efficace. In particolare, questo documento contiene i seguenti punti:
+\begin{itemize}
+    \item \textbf{Analisi dei rischi}: analisi dettagliata dei rischi che potrebbero presentarsi nel corso del progetto e dei metodi efficaci per evitarli e affrontarli;
+    \item \textbf{Modello di ciclo di vita}: definizione del modello di ciclo di vita selezionato per il progetto;
+    \item \textbf{Pianificazione}: divisione dei ruoli e del lavoro da svolgere entro determinate scadenze temporali fissate in accordo tra i componenti del gruppo in modo da rispettare le \glo{milestone} decise dal committente;
+    \item \textbf{Preventivo e Consuntivo}: stima dei costi e della quantità in ore previste per ogni scadenza alla fine di cui verrà stilato un verbale interno che riporterà l'andamento del lavoro e la fase di avanzamento dello sviluppo del progetto.
+\end{itemize}
+
+\subsubsection{Piano di Qualifica}
+In questo documento vengono esposte le tecniche di \glo{verifica} e \glo{validazione}.
+Sono i \roleVerifierP{} che si occupano di controllare la qualità del progetto. Il way of working
+è quello di sottoporre i documenti stilati a un attento controllo e fornire delle misure che permettono di migliorare le pianificazioni future e di analizzare il livello di avanzamento. 
+Il documento di \docNameVersionPdQ{} contiene le modalità da seguire per garantire che le attività di processo utilizzate non presentino
+errori e che il prodotto sia in linea con le attese nel periodo in esame.
+
+
+\subsection{Sviluppo}
+
+\subsubsection{Scopo}
+Il processo di sviluppo contiene tutte le attività che riguardano la produzione del software richiesto 
+dal cliente, in particolare analisi dei requisiti, design, codifica, integrazione, test e installazione.
+
+\subsubsection{Analisi dei Requisiti}
+Questa attività è compito degli \roleAnalystP{}.
+L'obiettivo è analizzare nel dettaglio e in profondità l'utilizzo specifico del prodotto da sviluppare.
+La specifica dei requisiti deve analizzare funzioni e capacità del sistema, sicurezza, interfaccia, operazioni di manutenzione,
+vincoli di progettazione e requisiti di qualificazione. Il tutto deve essere documentato nell'\docNameVersionAdR{}.\\
+I requisiti:
+\begin{itemize}
+    \item non devono essere in conflitto tra loro;
+    \item devono essere verificabili;
+    \item devono essere tutti e soli quelli necessari e sufficienti;
+    \item devono garantire soddisfacibilità rispetto ai vincoli di processo.
+\end{itemize}
+
+\subsubsection{Classificazione dei Requisiti}
+Lo scopo è ordinare i requisiti utilizzando un indice di priorità per facilitarne la comprensione, la manutenzione e il 
+tracciamento.
+\\
+
+\textbf{\centerline{R[Priorità][Tipo][Codice]}}
+
+
+\begin{itemize}
+    \item \textbf{Priorità}: Ogni requisito ha una sua priorità che può essere di tre livelli:
+    \begin{itemize}
+        \item \textbf{Obbligatorio (0)}: indica un requisito irrinunciabile per il committente;
+        \item \textbf{Desiderabile (1)}: indica un requisito che aggiunge valore ma non è indispensabile;
+        \item \textbf{Opzionale (2)}: indica un requisito la cui utilità è relativa o potrà rivelarsi utile in un secondo momento.
+    \end{itemize}
+
+
+
+    \item \textbf{Tipo}: Ogni requisito si differenzia in base a 4 diverse tipologie:
+        \begin{itemize}
+            \item \textbf{Funzionali (F)}: descrivono come il sistema reagisce a particolari input al fine di soddisfare i servizi forniti;
+            \item \textbf{Prestazionali (P)}: stabiliscono un vincolo sulle prestazioni del sistema in determinate condizioni;
+            \item \textbf{Qualitativi (Q)}: garantiscono la qualità del prodotto includendo requisiti di efficacia ed efficienza;
+            \item \textbf{Dichiarativi o di Vincolo (D)}: rappresentano un vincolo imposto dall'azienda proponente \proposerName{}.
+        \end{itemize}
+
+    \item \textbf{Codice}: Ogni requisito deve avere un codice identificativo univoco, dove ogni numero è separato da un punto.
+Questo numero segue la posizione del requisito all'interno della struttura del documento \es{2.5.7}.
+
+\end{itemize}
+\subsubsection{Casi d'uso}
+I \glo{casi d'uso} descrivono interazioni fra utenti e sistema, ovvero situazioni in cui il sistema 
+risponde ai bisogni dell'utente. Offrono una visione dal punto di vista dell'utente.\\
+Ogni caso d'uso viene descritto dalle seguenti caratteristiche:
+\begin{itemize}
+    \item \textbf{Identificatore}: UC[codice padre].[codice figlio] - Nome 
+                                \begin{itemize}
+                                    \item UC è la sigla per Use Case;
+                                    \item codice padre è la penultima cifra;
+                                    \item codice figlio è l'ultima cifra;                                   
+                                    \item nome è il nome del caso d'uso.
+                                \end{itemize}
+                                   
+    \item \textbf{\glo{Attori}}: primari e secondari del caso d'uso;
+    \item \textbf{Descrizione}: descrizione generale del caso d'uso;
+    \item \textbf{Pre-condizione}: indica le condizioni che devono essere vere prima del verificarsi del caso d'uso;
+    \item \textbf{Post-condizione}: indica le condizioni che devono essere vere dopo del verificarsi del caso d'uso;
+    \item \textbf{Scenario Principale}: eventi del caso d'uso che vengono numerati;
+    \item \textbf{Inclusioni} (se presenti): eventi comuni a più casi d'uso, situazione per cui un caso d'uso è incluso nell'esecuzione di un altro;
+    \item \textbf{Estensioni} (se presenti): indica l'aumento delle funzionalità di un caso d'uso, ogni istanza di un caso d'uso esegue un altro caso d'uso in modo condizionato;
+    \item \textbf{Generalizzazioni} (se presenti): aggiungono o modificano caratteristiche base.
+  \end{itemize}
+Per mettere in evidenza attori e servizi, useremo i diagrammi per la rappresentazione grafica dei casi d'uso.
+
+\subsubsection{Progettazione}
+Lo scopo è di garantire correttezza del prodotto per costruzione e non per correzione. La progettazione deve essere
+efficiente ed efficace. Le decisioni prese in questo ambito devono essere soddisfacenti per tutti gli \glo{stakeholder}.
+La progettazione prende le informazioni dall' \docNameVersionAdR{} necessarie per produrre una soluzione delle richieste.
+Sono i \roleDesignerP{} a occuparsi di questa sezione.
+
+\subsubsection{Obiettivi della Progettazione}
+\begin{itemize}
+    \item garanzia di qualità nel soddisfacimento dei requisiti;
+    \item definizione dell'\glo{architettura} del prodotto;
+    \item gestione della complessità del sistema con le modalità del divide et impera;
+    \item progettazione consapevole e dettagliata.
+\end{itemize}
+
+\subsubsection{Architettura}
+Le modalità di sviluppo dell'architettura del software devono essere registrate in due documenti:
+\begin{itemize}
+    \item \textbf{\glo{Technology baseline}}: riporta tutte le tecnologie, i \glo{framework} e le librerie utilizzate nel \glo{Proof of Concept} (PoC) che deve dimostrare in che modo una determinata tecnologia possa essere efficacemente utile. Il PoC deve essere accessibile su \glo{GitHub};
+    \item \textbf{\glo{Product baseline}}: baseline architetturale, presenta diagrammi delle classi e di sequenza. L'analisi comprende i design pattern conformi all'architettura.
+\end{itemize}
+
+\subsubsection{Diagrammi}
+Per descrivere in maniera chiara e completa le scelte progettuali adottate, il gruppo utilizzerà dei diagrammi
+creati con il linguaggio UML 2.0. Tali diagrammi si suddividono in cinque tipi:
+\begin{itemize}
+    \item \textbf{Diagramma delle classi}: descrive gli oggetti che fanno parte di un sistema e la loro interazione al suo interno;
+    \item \textbf{Diagramma di sequenza}: descrive la collaborazione di più oggetti volti all'implementazione di un determinato comportamento;
+    \item \textbf{Diagramma di attività}: descrive la logica procedurale;
+    \item \textbf{Diagramma dei casi d'uso}: descrive le attività permesse all'utente che interagisce col sistema;
+    \item \textbf{Diagramma dei packages}: raggruppa elementi UML a un livello più elevato.
+\end{itemize} 
+
+\subsubsection{Codifica}
+La codifica è un processo svolto dai \roleProgrammerP{}. In questa sezione intendiamo offrire una guida alle scelte
+che abbiamo preso durante questo processo. Le funzioni contano un massimo di dieci righe, ognuna
+delle quali deve essere verificata e validata. \\
+Le norme relative a questo processo sono in fase di completamento in quanto il gruppo inizierà a svilupparlo
+soltanto in un periodo successivo.
+
+\myparagraph{Intestazione} 
+Ogni file di codifica conterrà la seguente intestazione:\\ \\
+/*\\
+$\star$ Nome file:\\
+$\star$ Type:\\
+$\star$ Data creazione: GG-MM-AAAA\\
+$\star$\\
+$\star$ Descrizione del file:\\
+$\star$\\
+$\star$ Autore:\\
+$\star$ Versione:\\
+$\star$ Registro modifiche:\\
+$\star$ Autore, Data ultima modifica, descrizione\\
+$\star$/\\
+
+\myparagraph{Versionamento}
+\begin{itemize}
+    \item \textbf{X}: indica la versione principale. Ad ogni suo incremento Y riparte da zero;
+    \item \textbf{Y}: indica una modifica significativa dopo la quale Y viene incrementata. 
+\end{itemize}
+La prima versione di rilascio corrisponde alla 1.0 che indica un prodotto finito stabile. Da questa versione
+possono avvenire poi la verifica e le modifiche che conducono a un incremento degli indici.
+
+
+\myparagraph{Stile di Codifica}
+Il linguaggio che utilizzeremo sarà \glo{Node.js}, perciò ci atterremo allo stile di codifica descritto dalla guida
+Airbnb Javascript style guide (\url{https://github.com/airbnb/javascript}). In particolare vengono riportate qui sotto
+alcune linee guida:\\
+\textbf{Indentazione}:
+\begin{itemize}
+    \item Utilizzare parentesi graffe per tutti i blocchi multi-linea. Per i blocchi inline le parentesi non vanno riportate.\\ \\
+    SI\\ \\ \fbox{\parbox{4cm}{if (test) return false;\\ \\ if (test) \{\\
+        \hspace*{0,3cm}return false;\\
+      \}
+      }}\\ \\ \\
+    NO\\ \\ \fbox{\parbox{4cm}{if (test)\\
+    \hspace*{0,3cm}return false;}}   
+    \item Porre l'else sulla stessa riga di chiusura dell'if, separato da uno spazio dalla parentesi graffa di chiusura.\\ \\
+    SI\\ \\ \fbox{\parbox{4cm}{if (test) \{\\
+    \hspace*{0,3cm}thing1();\\
+    \hspace*{0,3cm}thing2();\\
+      \} else \{\\
+      \hspace*{0,4cm}thing3();\\
+      \}}}\\ \\ \\
+    NO\\ \\ \fbox{\parbox{4cm}{if (test) \{\\
+    \hspace*{0,3cm}thing1();\\
+    \hspace*{0,3cm}thing2();\\
+      \}\\
+      else \{\\
+      \hspace*{0,3cm}thing3();\\
+      \}}}
+    \item Lasciare due spazi vuoti prima di ogni istruzione all'interno delle righe di ogni blocco.\\ \\
+    SI\\ \\ \fbox{\parbox{4cm}{function baz() \{\\
+        ..let name;\\
+        \}}}\\ \\ \\
+    NO\\ \\ \fbox{\parbox{4cm}{function foo() \{\\
+        ....let name;\\
+        \}}}
+    \item Lasciare uno spazio vuoto prima della parentesi graffa che segnala l'inizio di un blocco.\\ \\
+    SI\\ \\ \fbox{\parbox{4cm}{function test() \{\\
+    \hspace*{0,3cm}console.log('test');\\
+      \}}}\\ \\ \\
+    NO\\ \\ \fbox{\parbox{4cm}{function test()\{\\
+    \hspace*{0,3cm}console.log('test');\\
+      \}}}
+    \item Lasciare una riga vuota tra un blocco e un altro e mai all'interno di uno stesso blocco.\\ \\
+    SI\\ \\ \fbox{\parbox{4cm}{if (foo) \{\\
+    \hspace*{0,3cm}return bar;\\
+      \}\\
+      \\
+      return baz;}}\\ \\ \\
+    NO\\ \\ \fbox{\parbox{4cm}{if (foo) \{\\
+    \hspace*{0,3cm}return bar;\\
+      \}\\
+      return baz;}}
+    \item Non utilizzare spazi all'interno delle parentesi tonde.\\ \\
+    SI\\ \\ \fbox{\parbox{4cm}{function bar(foo) \{\\
+    \hspace*{0,3cm}return foo;\\
+      \}}}\\ \\ \\
+    NO\\ \\ \fbox{\parbox{4cm}{function bar( foo ) \{\\
+    \hspace*{0,3cm}return foo;\\
+      \}}}
+    \item Evitare di avere linee di codice di oltre cento caratteri.
+    \item Lasciare uno spazio dopo la virgola e mai prima.\\ \\
+    SI\\ \\ \fbox{\parbox{4cm}{var foo = 1, bar = 2;\\
+    var arr = [1, 2];}}\\ \\ \\
+    NO\\ \\ \fbox{\parbox{4cm}{var foo = 1,bar = 2;\\
+    var arr = [1 , 2];}}
+    \item Non lasciare spazio tra il nome di una funzione e i suoi parametri.\\ \\
+    SI\\ \\ \fbox{func();}\\ \\ \\
+    NO\\ \\ \fbox{func ();}
+\end{itemize}
+\textbf{Nomi}:
+\begin{itemize}
+    \item Evitare di utilizzare nomi composti da una singola lettera, ma utilizzare nomi che siano intuitivi per lo scopo della funzione o variabile.\\ \\
+    SI\\ \\ \fbox{\parbox{4cm}{function query() \{\\
+    \hspace*{0,3cm}// ...\\
+      \}}}\\ \\ \\
+    NO\\ \\ \fbox{\parbox{4cm}{function q() \{\\
+    \hspace*{0,3cm}// ...\\
+      \}}}
+    \item Utilizzare camelCase per i nomi.\\ \\
+    SI\\ \\ \fbox{\parbox{5cm}{const thisIsMyObject = \{\};\\
+    function thisIsMyFunction() \{\}}}\\ \\ \\
+    NO\\ \\ \fbox{\parbox{5cm}{const OBJEcttsssss = \{\};\\
+    const this\_is\_my\_object = \{\};
+    function c() \{\}}}
+    \item Utilizzare PascalCase solo per i nomi di classi e costruttori.\\ \\
+    SI\\ \\ \fbox{\parbox{6cm}{class User \{\\\hspace*{0,3cm}constructor(options) \{\\\hspace*{0,7cm}this.name = options.name;\\\hspace*{0,3cm}\}\\\}}}\\ \\ \\
+    NO\\ \\ \fbox{\parbox{6cm}{class user \{\\\hspace*{0,3cm}constructor(options) \{\\\hspace*{0,7cm}this.name = options.name;\\\hspace*{0,3cm}\}\\\}}}
+\end{itemize}
+\textbf{Commenti}:
+\begin{itemize}
+    \item Utilizzare il costrutto /*....*/ per i commenti multi riga.\\ \\
+    SI\\ \\ \fbox{\parbox{6cm}{/**\\
+    $\star$ make() returns a new element\\
+    $\star$ based on the passed-in tag name\\
+    $\star$/\\
+   function make(tag) \{\\
+   \\
+   \hspace*{0,3cm}// ...\\
+   \\
+     return element;\\
+   \}}}\\ \\ \\
+    NO\\ \\ \fbox{\parbox{6cm}{// make() returns a new element\\
+    // based on the passed in tag name\\
+    //\\
+    // @param {String} tag\\
+    // @return {Element} element\\
+    function make(tag) \{\\
+    \\
+    \hspace*{0,3cm}// ...\\
+    \\
+      return element;\\
+    \}}}
+    \item Utilizzare //... per i commenti inline i quali devono essere separati da uno spazio dalla dicitura // e devono apparire su una riga apposita prima dell'istruzione di riferimento e non sulla stessa dell'istruzione.\\ \\
+    SI\\ \\ \fbox{\parbox{6cm}{// set the default type to 'no type'\\
+    const type = this.type $|$$|$ 'no type';}}\\ \\ \\
+    NO\\ \\ \fbox{\parbox{6cm}{const active = true;  // is current tab}}
+\end{itemize}
+    \textbf{Variabili}:
+\begin{itemize}
+    \item Utilizzare sempre const o let per le dichiarazioni di variabili, altrimenti esse risulteranno essere globali, che è cosa da evitare per non inquinare lo spazio dei nomi.\\ \\
+    SI\\ \\ \fbox{const superPower = new SuperPower();}\\ \\ \\
+    NO\\ \\ \fbox{superPower = new SuperPower();}
+    \item Ogni dichiarazione di variabile deve avvenire utilizzando var o let. Questo facilita la comprensione del codice e evita il rischio di scambiare un punto e virgola";"con una virgola",”.\\
+    SI\\ \\ \fbox{\parbox{5cm}{const items = getItems();\\
+    const goSportsTeam = true;\\
+    const dragonball = 'z';}}\\ \\ \\
+    NO\\ \\ \fbox{\parbox{5cm}{const items = getItems(),\\
+    goSportsTeam = true,\\
+    dragonball = 'z';}}
+    \item La dichiarazione di variabili non inizializzate immediatamente va sempre posta per ultima.\\ \\
+    SI\\ \\ \fbox{\parbox{5cm}{const items = getItems();\\
+    const goSportsTeam;\\
+    const dragonball = 'z';}}\\ \\ \\
+    NO\\ \\ \fbox{\parbox{5cm}{const items = getItems(),\\
+    dragonball = 'z',\\
+    goSportsTeam = true;}}
+\end{itemize}
+
+Sono state adottate alcune convenzioni per facilitare il riscontro di problemi o incompletezza di funzioni:
+\begin{itemize}
+    \item // FIXME: utilizzato per segnalare problemi. Sorge laddove vi è un errore da risolvere;
+    \item // TODO: utilizzato per indicare ciò che deve essere ancora svolto per risolvere un problema.
+\end{itemize}

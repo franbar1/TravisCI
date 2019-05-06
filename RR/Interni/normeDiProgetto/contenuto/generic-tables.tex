@@ -1,0 +1,55 @@
+% Tabella generica
+\begin{table}[H]
+	\caption {Table Title} \label{table:name}
+	\centering
+	\renewcommand{\arraystretch}{1.8}
+	\rowcolors{2}{cyan!100!black!15}{cyan!100!black!25}
+	\begin{tabular}{c c c c}
+		\rowcolor[HTML]{009ABB} 
+		\multicolumn{1}{c}{\color[HTML]{FFFFFF} \textbf{Attributo}} &
+		\multicolumn{1}{c}{\color[HTML]{FFFFFF} \textbf{Attributo}} &
+		\multicolumn{1}{c}{\color[HTML]{FFFFFF} \textbf{Attributo}} &
+		\multicolumn{1}{c}{\color[HTML]{FFFFFF} \textbf{Attributo}} \\
+		\rowcolor[HTML]{CCE6EA}
+		testo & testo & testo & testo \\
+	\end{tabular}
+\end{table}
+
+% Tabella dei rischi
+\begin{table}[H]
+	\caption {Table Title} \label{table:title}
+	\centering
+	\renewcommand{\arraystretch}{1.8}
+	\begin{tabular}{p{2.5cm}p{3.8cm}p{3.8cm}p{2.5cm}}
+		\rowcolor[HTML]{009ABB} 
+		\multicolumn{1}{c}{\color[HTML]{FFFFFF} \textbf{Nome}} &
+		\multicolumn{1}{c}{\color[HTML]{FFFFFF} \textbf{Descrizione}} &
+		\multicolumn{1}{c}{\color[HTML]{FFFFFF} \textbf{Rilevamento}} &
+		\multicolumn{1}{c}{\color[HTML]{FFFFFF} \textbf{Rischio}} \\
+		\rowcolor[HTML]{CCE6EA}
+		\textbf{Comprensione dei requisiti} & Commento & Come rilevare il problema & \textbf{Medio-Alto} \\
+		\rowcolor[HTML]{ACDCE5} 
+		\multicolumn{1}{l}{\parbox{2.5cm}{\textbf{Piano di contingenza}}} & 
+		\multicolumn{3}{l}{\parbox{10cm}{Testo Grave. Non vengono rispet Grave. Non vengono rispet Grave. Non vengono rispet}}\\
+		\hline
+	\end{tabular}
+\end{table}
+
+% Tabella attuazione dei rischi
+\begin{table}[H]
+	\caption {Table Title} \label{table:nome}
+	\centering
+	\renewcommand{\arraystretch}{1.8}
+	\begin{tabular}{p{3cm} p{5.12cm} p{5.12cm}}
+		\rowcolor[HTML]{007799} 
+		\multicolumn{3}{c}{\color[HTML]{FFFFFF} \textbf{Periodo}} \\
+		\rowcolor[HTML]{009ABB} 
+		\multicolumn{1}{c}{\color[HTML]{FFFFFF} \textbf{Rischio}} & \multicolumn{1}{c}{\color[HTML]{FFFFFF} \textbf{Evento}} & \multicolumn{1}{c}{\color[HTML]{FFFFFF} \textbf{Azioni intraprese}} \\
+		\rowcolor[HTML]{CCE6EA}
+		\textbf{Comprensione dei requisiti} & Matteo non ha potuto lavorare durante le vacanze a causa di un grave problema personale & Sono state ridistribuite le sue ore agli altri componenti del gruppo perchè così bla bla \\
+		\rowcolor[HTML]{ACDCE5} 
+		\multicolumn{1}{c}{\textbf{Conclusioni}} & 
+		\multicolumn{2}{l}{\parbox{10cm}{\vspace{0.3cm}La risoluzione è stata efficace perchè si è rimasti dentro la pianificazione\vspace{0.3cm}}}\\
+		\hline
+	\end{tabular}
+\end{table}
